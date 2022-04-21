@@ -4,7 +4,7 @@
 
     <div class="header-links" >
         <ul>
-            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderLinksBefore })
+            
             @if (Model.IsAuthenticated)
             {
 <li><a href="@Url.RouteUrl("CustomerInfo")" class="ico-account">@T("Account.MyAccount")@*@Model.CustomerName*@</a></li>
