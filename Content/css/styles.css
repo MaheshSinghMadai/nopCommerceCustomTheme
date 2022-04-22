@@ -72,7 +72,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background-color: #fff;
-  font: normal 14px Arial, Helvetica, sans-serif;
+  font: normal 14px Arial, Montserrat, sans-serif;
   color: #777;
 }
 
@@ -3562,22 +3562,38 @@ label, label + * {
 }
 
 .page.registration-page .page-title {
-   color: #711a1a;
-   font-size:30px;
-   padding:10px;
-   border: none;
-   font-family: Verdana;
+    margin: 60px 0px 20px 0px;
+    text-align: left;
+    color: #248ece;
+    padding: 10px;
+    border-left: 6px solid #10f57e;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .page.registration-page .page-body {
     padding-top:10px;
-    background-color: #3386a1;
-    color:whitesmoke;
+    background-color:white;
 }
 
     .page.registration-page .page-body .fieldset .title {
-        color: whitesmoke;
+        height: 50px;
+        padding: 10px;
+        color: white;
+        font-weight:bold;
+        background-color: teal;
+        box-shadow: 10px 10px 5px #aaaaaa;
     }
+
+    .page.registration-page .page-body .fieldset .form-fields {
+        
+        border:none;
+        background-color: white;
+    }
+
+        .page.registration-page .page-body .fieldset .form-fields .inputs {
+            color: #303133;
+        }
 
     .page.registration-page .page-body .buttons .button-1  {
         background-color: #2e7e16;
@@ -3593,13 +3609,14 @@ label, label + * {
 .return-request-page .button-1 {
     min-width: 140px;
     border: none;
-    background-color:#248ece;
-    border-radius:8px;
+    background-color:forestgreen;
+    border-radius:18px;
     padding: 10px 30px;
     text-align: center;
     font-size: 15px;
     color: #fff;
     text-transform: uppercase;
+    opacity:1.0;
 }
 
 .registration-page .button-1:hover,
@@ -3624,9 +3641,9 @@ label, label + * {
 .page.login-page .page-title {
     margin: 60px 0px 40px 0px;
     text-align: left;
-    color: #801313;
+    color: black;
     padding: 10px;
-    border-left: 8px solid #4ab2f1;
+    border-left: 5px solid #4ab2f1;
     font-size: 30px;
     font-weight: bold;
 }
@@ -3637,14 +3654,17 @@ label, label + * {
 }
 
 .page.login-page .page-body .new-wrapper {
-    border: 1px solid #abfa90 ;
+    width:380px;
+    border: 1px solid #ddd;
     background-color: white;
-    padding:30px;
-    height:280px;
+    padding: 30px;
+    height: 350px;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
+
 .page.login-page .page-body .customer-blocks .new-wrapper .title {
-    color: #303133;
+    color: black;
     font-weight: bold;
     text-align: left;
     border-bottom: 2px solid #4cb17c;
@@ -3653,15 +3673,16 @@ label, label + * {
 
 .page.login-page .page-body .customer-blocks .new-wrapper .text {
     background-color: white;
+   
 }
 
-
 .page.login-page .page-body .customer-blocks .returning-wrapper.fieldset {
-    border: 1px solid #abfa90;
     color: #303133;
     height: 400px;
     text-align: left;
     padding: 30px;
+    border: 1px solid #abfa90;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
     .page.login-page .page-body .customer-blocks .returning-wrapper.fieldset .title {
@@ -6363,7 +6384,7 @@ label, label + * {
   border-radius: 0;
   background: none;
   padding: 0;
-  font: normal 14px Arial, Helvetica, sans-serif;
+  font: normal 14px 'Montserrat';
   color: #777;
 }
 
