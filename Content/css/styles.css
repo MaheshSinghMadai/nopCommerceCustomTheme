@@ -987,12 +987,12 @@ label, label + * {
 }
 
 .header-lower {
-  height:150px;
-  background-image: url('../images/background2.jpg');
-  background-color:white;
+  height:130px;
+/*  background-image: url('../images/background2.jpg');*/
+  background-color: whitesmoke;
   position: relative;
   z-index: 0;
-  padding: 35px 0;
+  padding-right: 75px;
 }
 
 .header-logo {
@@ -2261,7 +2261,7 @@ label, label + * {
 
 .overview .discontinued-product {
   background: #f3f3f3;
-  margin: 0 0 20px;
+  margin: 20px;
 }
 
 .overview .discontinued-product h4 {
@@ -2274,24 +2274,26 @@ label, label + * {
 
 .overview .product-name {
   margin: 0 0 25px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
   padding: 0 0 10px;
 }
 
 .overview .product-name h1 {
-  font-size: 30px;
-  font-weight: normal;
+  font-size: 40px;
+  font-weight: bold;
+  color: #07A93C;
 }
 
 .overview .short-description {
-  margin: 0 0 25px;
+  margin: 15px;
+  font-size:15px;
   line-height: 22px;
-  color: #666;
+  color: black;
 }
 
 .product-no-reviews,
 .product-reviews-overview {
-  margin: 0 0 25px;
+  margin: 15px;
   color: #444;
 }
 
@@ -2316,12 +2318,12 @@ label, label + * {
 }
 
 .product-review-links a {
-  text-decoration: underline;
+
 }
 
 .product-review-links a:hover,
 .product-review-links a:focus {
-  color: #4ab2f1;
+  color: #d37b10;
 }
 
 .overview .value,
@@ -2346,30 +2348,33 @@ label, label + * {
   font-size: 0;
 }
 
-.overview-buttons div {
-  width: 80%;
-  margin: 0 auto 3px;
-}
+    .overview-buttons div {
+        width: 100%;
+        margin: 15px;
+    }
 
 .overview .button-2,
 .variant-overview .button-2 {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #eaeaea;
-  background-position: left center;
-  background-repeat: no-repeat;
-  padding: 12px 15px 12px 40px;
-  text-align: left;
-  font-size: 14px; /*reset zeroing*/
-  color: #666;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    margin-left: 5px;
+    background-color: White;
+    border: 1px solid green;
+    color: black;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 12px 15px 12px 40px;
+    text-align: left;
+    font-size: 12px; /*reset zeroing*/
 }
 
 .overview .button-2:hover,
 .overview .button-2:focus,
 .variant-overview .button-2:hover,
 .variant-overview .button-2:focus {
-  background-color: #ddd;
+    opacity: 0.85;
 }
 
 .overview .add-to-compare-list-button {
@@ -2465,8 +2470,10 @@ label, label + * {
 
 .overview .prices,
 .variant-overview .prices {
-  margin: 0 0 10px;
-  overflow: hidden;
+    margin: 0 0 10px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 25px;
 }
 
 .overview .prices > div,
@@ -2483,21 +2490,23 @@ label, label + * {
 .variant-overview .old-product-price,
 .overview .non-discounted-price,
 .variant-overview .non-discounted-price {
-  font-size: 14px;
-  color: #999;
-  text-decoration: line-through;
+    font-size: 14px;
+    color: #032e23;
+    text-decoration: line-through;
 }
 
 .overview .product-price,
 .variant-overview .product-price {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  color: #444;
+  color: #07a93c;
+  display:inline-block;
 }
 
 .overview .tax-shipping-info a,
 .variant-overview .tax-shipping-info a {
   color: #4ab2f1;
+  margin:15px;
 }
 
 .overview .tax-shipping-info a:hover,
@@ -2554,7 +2563,7 @@ label, label + * {
 }
 
 .overview .add-to-cart {
-  margin: 0 0 20px;
+  margin: 20px;
 }
 
 .overview .add-to-cart-panel,
@@ -2575,12 +2584,14 @@ label, label + * {
 
 .overview .qty-input,
 .variant-overview .qty-input {
-  width: 45px;
-  height: 43px;
+  width: 135px;
+  height: 50px;
+  border:none;
   padding: 0 12px;
   text-align: center;
-  font-size: 15px;
-  color: #444;
+  font-size: 20px;
+  color: black;
+  border: 1px solid green;
 }
 
 .overview .qty-dropdown,
@@ -2593,20 +2604,26 @@ label, label + * {
 
 .overview .add-to-cart-button,
 .variant-overview .add-to-cart-button {
-  height: 43px;
-  border: none;
-  background-color: #4ab2f1;
-  padding: 0 24px;
-  font-size: 15px;
-  color: #fff;
-  text-transform: uppercase;
+    height: 50px;
+    width:120px;
+    margin: -10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #09507e;
+    text-align: center;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight:bold;
+    margin-top:0px;
+    color: #fff;
+  /*  text-transform: uppercase;*/
 }
 
 .overview .add-to-cart-button:hover,
 .overview .add-to-cart-button:focus,
 .variant-overview .add-to-cart-button:hover,
 .variant-overview .add-to-cart-button:focus {
-  background-color: #248ece;
+  background-color: #444;
 }
 
 .product-share-button {
@@ -2685,7 +2702,9 @@ label, label + * {
 
 .product-specs-box {
   margin: 0 0 40px;
+  color: black;
 }
+
 
 .product-specs-box td {
   border: 1px solid #ddd;
@@ -2696,7 +2715,7 @@ label, label + * {
   border: 0;
   padding-top: 20px;
   font-size: 16px;
-  color: #444;
+  color: black;
 }
 
 .product-tags-list {
@@ -2706,6 +2725,7 @@ label, label + * {
 .product-tags-list li {
   display: inline-block;
   font-size: 14px; /*reset zeroing*/
+  color: black;
 }
 
 .product-tags-list li.separator {
@@ -3067,23 +3087,35 @@ label, label + * {
 
 
 .product-reviews-page h1 a {
-  color: #4ab2f1;
+  color: #032e23;
 }
 
-.product-reviews-page h1 a:before,
-.product-reviews-page h1 a:after {
-  content: "''";
+product-reviews-page .page-title {
+    color:#248ece ;
 }
+
+    .product-reviews-page h1 a:before,
+    .product-reviews-page h1 a:after {
+        content: "''";
+    }
 
 .product-reviews-page .title {
-  margin: 0 0 20px;
-  font-size: 20px;
-  color: #444;
+    font-size: 20px;
+    color: black;
+    box-shadow: 1px 1px #aaaaaa;
+    height: 60px;
 }
 
-.product-reviews-page .title strong {
-  font-weight: normal;
+    .product-reviews-page .title strong {
+        font-weight: normal;
+        color: #032e23;     
+    }
+
+product-reviews-page .page-body .write-review .fieldset .form-fields {
+    color: #248ece;
+    background-color:white;
 }
+
 
 .write-review {
   margin: 0 0 60px;
