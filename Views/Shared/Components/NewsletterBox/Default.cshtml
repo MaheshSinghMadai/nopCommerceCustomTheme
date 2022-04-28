@@ -1,6 +1,6 @@
 ﻿@model NewsletterBoxModel
 <div class="newsletter">
-    <div class="title" style="color:white">
+    <div class="newsletter-title">
         <strong>Newsletter</strong>
     </div>
     <div class="newsletter-subscribe" id="newsletter-subscribe-block">
@@ -11,17 +11,16 @@
 
             @if (Model.AllowToUnsubscribe)
             {
-                <div class="options">
-                    <span class="subscribe">
-                        <input id="newsletter_subscribe" type="radio" value="newsletter_subscribe" name="newsletter_block" checked="checked" />
-                        <label for="newsletter_subscribe">@T("Newsletter.Options.Subscribe")</label>
-                    </span>
-                    <span class="unsubscribe">
-                        <input id="newsletter_unsubscribe" type="radio" value="newsletter_unsubscribe" name="newsletter_block" />
-                        <label for="newsletter_unsubscribe">@T("Newsletter.Options.Unsubscribe")</label>
-                    </span>
-                </div>
-            }
+<div class="options">
+    <span class="subscribe">
+        <input id="newsletter_subscribe" type="radio" value="newsletter_subscribe" name="newsletter_block" checked="checked" />
+        <label for="newsletter_subscribe">@T("Newsletter.Options.Subscribe")</label>
+    </span>
+    <span class="unsubscribe">
+        <input id="newsletter_unsubscribe" type="radio" value="newsletter_unsubscribe" name="newsletter_block" />
+        <label for="newsletter_unsubscribe">@T("Newsletter.Options.Unsubscribe")</label>
+    </span>
+</div>            }
         </div>
         <div class="newsletter-validation">
             <span id="subscribe-loading-progress" style="display: none;" class="please-wait">@T("Common.Wait")</span>
