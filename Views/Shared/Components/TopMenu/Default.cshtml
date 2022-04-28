@@ -46,10 +46,7 @@
 
 <ul class="top-menu notmobile">
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuBefore })
-    @if (Model.DisplayHomepageMenuItem)
-    {
-        <li><a href="@Url.RouteUrl("Homepage")">@T("Homepage")</a></li>
-    }
+  
     @if (!Model.UseAjaxMenu)
     {
         var rootCategories = Model.Categories.Where(x => x.IncludeInTopMenu).ToList();
@@ -67,12 +64,7 @@
     {
         <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
     }
-    @if (Model.NewProductsEnabled && Model.DisplayNewProductsMenuItem)
-    {
-        <li><a href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a></li>
-    }
- 
-  
+
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
 </ul>
 @{
@@ -103,10 +95,7 @@
         {
             <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
         }
-        @if (Model.NewProductsEnabled && Model.DisplayNewProductsMenuItem)
-        {
-            <li><a href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a></li>
-        }
+       
         @if (Model.DisplayProductSearchMenuItem)
         {
             <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a></li>

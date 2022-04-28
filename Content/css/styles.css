@@ -228,8 +228,9 @@ label, label + * {
 }
 
 .page-title h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: normal;
+  color:#303133;
 }
 
 .page:after,
@@ -1282,7 +1283,7 @@ label, label + * {
         height:36px;
         margin: 0px 0px 0px 10px;
         border: none;
-        background-color:#787b7c;
+        background-color: #1d8604;
         color: white;
         width: 120px;
         font-size:12px;
@@ -1620,8 +1621,9 @@ label, label + * {
 .product-selectors {
   margin: 0 0 20px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 20px 0;
+  /*border-bottom: 1px solid #ddd;*/
+  box-shadow: 3px 3px 3px 3px #aaa;
+  padding: 20px ;
 }
 
 .product-selectors:first-child {
@@ -1662,7 +1664,8 @@ label, label + * {
   background-color: #f6f6f6;
   padding: 10px;
   font-size: 17px;
-  color: #444;
+  color: #303133;
+  font-weight:bold;
 }
 
 .product-filter .filter-title strong {
@@ -1752,6 +1755,7 @@ label, label + * {
         z-index: 1;
         height: inherit;
         margin-left:20%;
+        background-color: #fff;
         background-color: #fff;
         margin-bottom: 20px;
         position: relative;
@@ -1880,6 +1884,7 @@ label, label + * {
         border: none;
         vertical-align: middle;
         margin-bottom: 10px;
+        
     }
 
     .item-box .product-box-add-to-cart-button {
@@ -1888,8 +1893,9 @@ label, label + * {
         font-size: 12px;
         text-transform: uppercase;
         color: white;
-        background-color: #079a29;
+        background-color: teal;
         font-weight: bold;
+        margin-left: 5%;
     }
 
 
@@ -7106,7 +7112,7 @@ pre {
     width: 55px;
     height: 55px;
     border-left: 1px solid #fff;
-    background: url('../images/toggle-black.png') center no-repeat;
+   /* background: url('../images/toggle-black.png') center no-repeat;*/
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
@@ -7120,7 +7126,7 @@ pre {
   }
 
   .sublist .sublist li {
-    background-color: #f6f6f6;
+    background-color: #248ece;
   }
 
   .sublist .sublist .sublist li {
@@ -7470,10 +7476,7 @@ pre {
 
   .item-box {
     width: 30%;
-    margin: 
-        
-        
-        0px;
+    margin: 10px;
   }
 
   .item-box:nth-child(2n+1) {
