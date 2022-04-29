@@ -4,7 +4,7 @@
         <tbody>
             <tr class="order-subtotal">
                 <td class="cart-total-left">
-                    <label>@T("ShoppingCart.Totals.SubTotal"):</label>
+                    <label>@T("ShoppingCart.Totals.SubTotal")</label>
                 </td>
                 <td class="cart-total-right">
                     <span class="value-summary">@Model.SubTotal</span>
@@ -14,7 +14,7 @@
             {
                 <tr class="order-subtotal-discount">
                     <td class="cart-total-left">
-                        <label>@T("ShoppingCart.Totals.SubTotalDiscount"):</label>
+                        <label>@T("ShoppingCart.Totals.SubTotalDiscount")</label>
                     </td>
                     <td class="cart-total-right">
                         <span class="value-summary">@Model.SubTotalDiscount</span>
@@ -25,7 +25,7 @@
             {
                 <tr class="shipping-cost">
                     <td class="cart-total-left">
-                        <label>@T("ShoppingCart.Totals.Shipping"):</label>
+                        <label>@T("ShoppingCart.Totals.Shipping")</label>
                         @if (Model.RequiresShipping && !string.IsNullOrEmpty(Model.SelectedShippingMethod))
                         {
                             <span class="selected-shipping-method">@T("ShoppingCart.Totals.Shipping.Method", Model.SelectedShippingMethod)</span>
@@ -54,7 +54,7 @@
             {
                 <tr class="additional-fees">
                     <td class="cart-total-left">
-                        <label>@T("ShoppingCart.Totals.PaymentMethodAdditionalFee"):</label>
+                        <label>@T("ShoppingCart.Totals.PaymentMethodAdditionalFee")</label>
                     </td>
                     <td class="cart-total-right">
                         <span class="value-summary">@Model.PaymentMethodAdditionalFee</span>
@@ -67,7 +67,7 @@
                 {
                 <tr class="tax-rate">
                     <td class="cart-total-left">
-                        <label>@string.Format(T("ShoppingCart.Totals.TaxRateLine").Text, taxRate.Rate):</label>
+                        <label>@string.Format(T("ShoppingCart.Totals.TaxRateLine").Text, taxRate.Rate)</label>
                     </td>
                     <td class="cart-total-right">
                         <span>@taxRate.Value</span>
@@ -90,7 +90,7 @@
             {
                 <tr class="discount-total">
                     <td class="cart-total-left">
-                        <label>@T("ShoppingCart.Totals.OrderTotalDiscount"):</label>
+                        <label>@T("ShoppingCart.Totals.OrderTotalDiscount")</label>
                     </td>
                     <td class="cart-total-right">
                         <span class="value-summary">@Model.OrderTotalDiscount</span>
@@ -131,7 +131,7 @@
             }
             <tr class="order-total">
                 <td class="cart-total-left">
-                    <label>@T("ShoppingCart.Totals.OrderTotal"):</label>
+                    <label>@T("ShoppingCart.Totals.OrderTotal")</label>
                 </td>
                 <td class="cart-total-right">
                     @if (!string.IsNullOrEmpty(Model.OrderTotal))
@@ -148,7 +148,7 @@
             {
                 <tr class="earn-reward-points">
                     <td class="cart-total-left">
-                        <label>@T("ShoppingCart.Totals.RewardPoints.WillEarn"):</label>
+                        <label>@T("ShoppingCart.Totals.RewardPoints.WillEarn")</label>
                     </td>
                     <td class="cart-total-right">
                         <span class="value-summary">@string.Format(T("ShoppingCart.Totals.RewardPoints.WillEarn.Point").Text, Model.WillEarnRewardPoints)</span>
