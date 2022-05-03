@@ -2184,7 +2184,7 @@ label, label + * {
     float: left;
     height: 50px;
     position: absolute;
-    right: 30px;
+    right: -70px;
     text-indent: -9999px;
     width: 70px;
 }
@@ -2193,8 +2193,8 @@ label, label + * {
     background: url("../images/previous-arrow.png") no-repeat scroll 0 0 !important;
     float: left;
     height: 50px;
-    left: 30px;
     position: absolute;
+    left: -70px;
     text-indent: -9999px;
     width: 70px;
 }
@@ -9320,9 +9320,9 @@ pre {
         /* float: left;*/
         height: 50px;
         position: absolute;
-        right: -130px;
+        right: -70px;
         text-indent: -9999px;
-        width: 60px;
+        width: 50px;
         margin: 15px;
     }
 
@@ -9333,7 +9333,7 @@ pre {
         left: -70px;
         position: absolute;
         text-indent: -9999px;
-        width: 60px;
+        width: 50px;
     }
 
     .owl-carousel .owl-next:hover {
