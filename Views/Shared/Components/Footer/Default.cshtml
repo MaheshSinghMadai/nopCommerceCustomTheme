@@ -10,14 +10,14 @@
         <div class="newsletternew"
              style="background-color:black;
                     margin-bottom:20px;
-                    padding:20px;
+                    padding:30px;
                     width:100%"
              >
             @await Component.InvokeAsync("NewsletterBox")
         </div>
         <div class="footer-block information">
             <div class="title">
-                <strong>@T("Footer.Information")</strong>
+                @T("Footer.Information")
             </div>
             <ul class="list">
                 @if (Model.SitemapEnabled && Model.DisplaySitemapFooterItem)
@@ -33,7 +33,7 @@
         </div>
         <div class="footer-block customer-service">
             <div class="title">
-                <strong>@T("Footer.CustomerService")</strong>
+                @T("Footer.CustomerService")
             </div>
             <ul class="list">
                 @if (Model.SearchEnabled && Model.DisplayProductSearchFooterItem)
@@ -67,7 +67,7 @@
         </div>
         <div class="footer-block my-account">
             <div class="title">
-                <strong>@T("Footer.MyAccount")</strong>
+                @T("Footer.MyAccount")
             </div>
             <ul class="list">
                 @if (Model.DisplayCustomerInfoFooterItem)

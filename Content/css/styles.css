@@ -3894,12 +3894,12 @@ label {
 }
 
 .page.login-page .page-body .new-wrapper {
-    width: 420px;
+    width: 45%;
     border: 1px solid #ddd;
     background-color: white;
     padding: 30px;
     margin: 10px;
-    height: 350px;
+    height: auto;
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
@@ -7334,7 +7334,7 @@ pre {
     }
 
     .sublist .sublist .sublist li {
-        background-color: #fff;
+        background-color: green;
     }
     .block-category-navigation {
         display: none;
@@ -8620,12 +8620,15 @@ pre {
                     text-decoration: none;
                 }
     .header-menu .sublist {
+        margin-top:20px;
+        border-radius: 20px;
         display: none;
         position: absolute;
         width: 250px;
+        height:auto;
         box-shadow: 0 0 2px rgba(0,0,0,0.2);
         background-color: #fff;
-        padding: 10px 0;
+        /*padding: 2px;*/
         text-align: left;
         margin-top: 0px;
     }
@@ -8656,7 +8659,9 @@ pre {
 
             .header-menu .sublist li:hover > a,
             .header-menu .sublist li:focus > a {
-                background-color: #0e7d32;
+                background-color: #25c30d;
+                color:white;
+                border-radius:20px;
             }
 
     .header-menu ul li:hover > .sublist,
@@ -8686,7 +8691,10 @@ pre {
     .footer-block {
         float: left;
         width: 260px;
-        margin-left: 10px;
+        margin-left: 35px;
+    }
+    .footer-block .title{
+       font-weight: bolder;
     }
 
         .footer-block:first-child {
