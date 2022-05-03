@@ -105,7 +105,11 @@
     </div>
     <div class="footer-lower">
         <div class="footer-info">
-            <span class="footer-disclaimer">@T("Content.CopyrightNotice", DateTime.Now.Year, Model.StoreName)</span>
+            <ul class="list">
+                <li><span class="footer-disclaimer">@T("Content.CopyrightNotice", DateTime.Now.Year, Model.StoreName)</span>
+                <li>Designed by <a href="https://nestrait.com/"> NestraIT</a></li>
+            </ul>
+            
             @if (Model.DisplayTaxShippingInfoFooter)
             {
                 var inclTax = await workContext.GetTaxDisplayTypeAsync() == TaxDisplayType.IncludingTax;

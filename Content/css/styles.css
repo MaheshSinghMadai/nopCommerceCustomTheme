@@ -1275,8 +1275,8 @@ label, label + * {
     .newsletter-email input[type="email"] {
         width: 300px;
         text-align: center;
-        height: 36px;
-        margin: 0 -1px 0 0;
+        height: 40px;
+        margin: -11px -1px 0 0;
     }
 
     .newsletter-email .button-1.newsletter-subscribe-button {
@@ -1284,7 +1284,7 @@ label, label + * {
         height: 36px;
         margin: 0px 0px 0px 10px;
         border: none;
-        background-color: #1d8604;
+        background-color: #2d9c6d;
         color: white;
         width: 120px;
         font-size: 12px;
@@ -4148,7 +4148,7 @@ label {
     margin: 0 0 10px;
     border: 1px solid #054122;
     background-color: white;
-    padding: 20px;inputs
+    padding: 20px;
     line-height: 26px;
     color: #444;
 }
@@ -7019,6 +7019,10 @@ pre {
         width: 100%;
     }
 
+    .header-links ul {
+        margin:auto;
+    }
+
     .theme-custom {
         max-width: 100%;
     }
@@ -7186,11 +7190,9 @@ pre {
         .cart td {
             display: block;
             padding: 10px;
-            border-bottom: 3px solid green;
+       /*     border-bottom: 1px solid #aaa;*/
         }
-        .cart item-row {
-            border-bottom: 1px solid #aaa;
-        }
+       
 
             .cart td.remove-from-cart {
                 margin: 0 0 15px;
@@ -7218,7 +7220,7 @@ pre {
 
             .cart td.unit-price,
             .cart td.subtotal {
-                display: inline-block;
+                display: block;
                 padding: 20px 10px;
                 vertical-align: middle;
             }
@@ -7369,8 +7371,8 @@ pre {
 }
 
 .search-box {
-    display: table-cell;
-    text-align: right;
+    display: block;
+    text-align: center;
     vertical-align: middle;
 }
 
@@ -8415,7 +8417,7 @@ pre {
         display: inline-block;
         width: auto;
         margin: 0;
-        padding: 0 18px;
+        padding: 0 5px;
     }
 
     .header-menu {
@@ -8434,9 +8436,9 @@ pre {
     .flyout-cart {
         position: absolute;
         top: 100%;
-        right: 0;
+        right: 10px;
         z-index: 100;
-        width: 300px;
+        width: auto;
         box-shadow: 0 0 2px rgba(0,0,0,0.25);
         background-color: white;
         color: black;
@@ -8458,8 +8460,8 @@ pre {
 
             .mini-shopping-cart .count a {
                 margin: 0 2px;
-                font-weight: bold;
-                color: #444;
+                font-weight: bolder;
+                color: black;
             }
 
         .mini-shopping-cart .items {
@@ -8511,7 +8513,8 @@ pre {
         }
 
             .mini-shopping-cart .name a {
-                color: #4ab2f1;
+                color:teal;
+                font-weight:bolder;
             }
 
                 .mini-shopping-cart .name a:hover,
@@ -8525,26 +8528,28 @@ pre {
         }
 
         .mini-shopping-cart .totals {
+            text-align:center;
             margin: 0 0 12px;
             font-size: 14px;
         }
 
             .mini-shopping-cart .totals strong {
-                font-size: 16px;
-                color: #444;
+                font-size: 14px;
+                font-weight:bolder;
+                color: #2d9c6d;
             }
 
         .mini-shopping-cart .buttons {
-            margin: 0 0 5px;
+            margin: 0 60px 5px;
         }
 
         .mini-shopping-cart button[type="button"] {
             display: inline-block;
             border: none;
-            background-color: #4ab2f1;
+            background-color: #2d9c6d;
             padding: 10px 20px;
             font-size: 12px;
-            color: #fff;
+            color: white;
             text-transform: uppercase;
         }
 
@@ -8755,6 +8760,11 @@ pre {
     .footer-info {
         float: right;
         line-height: 32px;
+    }
+
+    .footer-info a{
+        color: #4AB2F1;
+        font-weight: bold;
     }
 
     .footer-powered-by {
