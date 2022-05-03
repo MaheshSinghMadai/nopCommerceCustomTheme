@@ -1946,7 +1946,7 @@ label, label + * {
     .home-page-category-grid .title,
     .sub-category-grid .title {
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
         letter-spacing: .7rem;
         font-weight: normal;
         margin: 20px;
@@ -7292,15 +7292,9 @@ pre {
                 font-size: 15px;
                 color: white;
             }
-
-                .top-menu > li > a:focus {
-                    position: relative;
-                    z-index: 1;
-                }
-
         .top-menu .sublist {
             display: none;
-            background-color: #AB634B;
+            background-color: #fff;
             padding: 5px 0;
         }
 
@@ -7322,7 +7316,7 @@ pre {
         width: 55px;
         height: 55px;
         border-left: 1px solid #fff;
-        /* background: url('../images/toggle-black.png') center no-repeat;*/
+        background: url('../images/toggle-black.png') center no-repeat;
         padding: 15px;
         font-size: 15px;
         font-weight: bold;
@@ -7336,13 +7330,12 @@ pre {
     }
 
     .sublist .sublist li {
-        background-color: #248ece;
+        background-color: #f6f6f6;
     }
 
     .sublist .sublist .sublist li {
         background-color: #fff;
     }
-
     .block-category-navigation {
         display: none;
     }
@@ -8265,7 +8258,7 @@ pre {
 
 
     .master-wrapper-content {
-        width: 100%;
+        width: 80%;
         margin: auto;
     }
 
@@ -8626,17 +8619,15 @@ pre {
                     color: #f5a707;
                     text-decoration: none;
                 }
-
     .header-menu .sublist {
-        display: inline-block;
+        display: none;
         position: absolute;
         width: 250px;
-        border-radius: 10px;
+        box-shadow: 0 0 2px rgba(0,0,0,0.2);
         background-color: #fff;
         padding: 10px 0;
-        margin-top: 20px;
         text-align: left;
-        font-size: 24px;
+        margin-top: 0px;
     }
 
         .header-menu .sublist li {
@@ -8647,8 +8638,10 @@ pre {
                 display: block;
                 position: relative;
                 padding: 10px 20px 10px 30px;
-                font-size: 14px;
+                font-size: 15px;
                 color: #444;
+                text-decoration: none;
+                line-height: 1.5;
             }
 
                 .header-menu .sublist li a:before {
@@ -8663,9 +8656,7 @@ pre {
 
             .header-menu .sublist li:hover > a,
             .header-menu .sublist li:focus > a {
-                background-color: #0a5c20;
-                color: white;
-                text-decoration: none;
+                background-color: #0e7d32;
             }
 
     .header-menu ul li:hover > .sublist,
