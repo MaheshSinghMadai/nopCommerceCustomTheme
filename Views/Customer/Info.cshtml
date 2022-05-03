@@ -172,7 +172,7 @@
             {
                 <div class="fieldset">
                     <div class="title">
-                        <strong>@T("Account.YourAddress")</strong>
+                        <b> @T("Account.YourAddress")</b>
                     </div>
                     <div class="form-fields">
                         @if (Model.StreetAddressEnabled)
@@ -271,7 +271,7 @@
             {
                 <div class="fieldset">
                     <div class="title">
-                        <strong>@T("Account.YourContactInformation")</strong>
+                        <b>@T("Account.YourContactInformation")</b>
                     </div>
                     <div class="form-fields">
                         @if (Model.PhoneEnabled)
@@ -305,7 +305,7 @@
             {
                 <div class="fieldset">
                     <div class="title">
-                        <strong>@T("Account.Options")</strong>
+                        <b>@T("Account.Options")</b>
                     </div>
                     <div class="form-fields">
                         @if (Model.NewsletterEnabled)
@@ -341,7 +341,7 @@
                         @if (Model.SignatureEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="Signature" ></label>
+                                <label asp-for="Signature"></label>
                                 <textarea asp-for="Signature" class="account-signature-text"></textarea>
                             </div>
                         }
@@ -352,7 +352,7 @@
             {
                 <div class="fieldset">
                     <div class="title">
-                        <strong>@T("Account.AssociatedExternalAuth")</strong>
+                       @T("Account.AssociatedExternalAuth")
                     </div>
                     @if (Model.AssociatedExternalAuthRecords.Count > 0)
                     {
@@ -424,7 +424,7 @@
             {
                 <div class="fieldset">
                     <div class="title">
-                        <strong>@T("Account.UserAgreement")</strong>
+                        @T("Account.UserAgreement")
                     </div>
                     <div class="form-fields">
                         @foreach (var consent in Model.GdprConsents)

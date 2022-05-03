@@ -11,22 +11,22 @@
     //add main CSS file
     if (supportRtl)
     {
-        Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/styles.rtl.css");
-        Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/bootstrap.min.rtl.css");
-        Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/bootstrap-theme.min.rtl.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/styles.rtl.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/bootstrap.min.rtl.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/bootstrap-theme.min.rtl.css");
     }
     else
     {
-        Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/styles.css");
-        Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/font.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/styles.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/font.css");
 
-        Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/bootstrap.min.css");
-        Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/bootstrap-theme.min.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/bootstrap.min.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/bootstrap-theme.min.css");
 
     }
 
-    Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/owl.carousel.min.css");
-    Html.AppendCssFileParts($"~/Themes/NewTheme/Content/css/font-awesome.min.css");
+    Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/owl.carousel.min.css");
+    Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/font-awesome.min.css");
 
     //add jQuery UI css file
     Html.AppendCssFileParts("~/lib_npm/jquery-ui-dist/jquery-ui.min.css");

@@ -314,13 +314,7 @@ label, label + * {
         color: #444;
         border-left: 3px solid teal;
     }
-
-    .fieldset .title:after {
-        content:"";
-        line-height: 3px;
-        width:30px;
-        color: teal;
-    }
+  
 
         .fieldset .title strong,
         .section .title strong {
@@ -339,6 +333,7 @@ label, label + * {
     text-align: center;
     white-space: nowrap; /*fix for 'required' elements*/
     font-size: 0;
+ 
 }
 
     .inputs:after {
@@ -364,6 +359,8 @@ label, label + * {
         width: 400px;
         max-width: 100%;
         background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid #777;
     }
 
     .inputs.custom-attributes {
@@ -442,6 +439,7 @@ label, label + * {
 
 .table-wrapper {
     overflow-x: auto;
+    border-bottom: 1px solid #aaa;
 }
 
 .data-table .hidden-row {
@@ -1408,7 +1406,7 @@ label, label + * {
         }
 
     .block .list .active > a {
-        color: #4ab2f1;
+        color: #6f0e0e;
     }
 
     .block .list a:hover,
@@ -1822,6 +1820,7 @@ label, label + * {
             }
 
     .item-box .sku {
+
     }
 
     .item-box .product-rating-box {
@@ -3276,14 +3275,14 @@ product-reviews-page .page-body .write-review .fieldset .form-fields {
     .product-review-item .review-item-head {
         border-top: 1px solid #ddd;
         overflow: hidden;
-        background-color: #f6f6f6;
+        background-color: #444;
         padding: 10px;
     }
 
     .product-review-item .review-title {
         line-height: 20px;
         font-size: 15px;
-        color: #444;
+        color: white;
     }
 
     .product-review-item .product-review-box {
@@ -3297,7 +3296,7 @@ product-reviews-page .page-body .write-review .fieldset .form-fields {
     .product-review-item .review-text {
         margin: 0 0 15px;
         line-height: 22px;
-        color: #444;
+        color: black;
     }
 
     .product-review-item .avatar {
@@ -3323,7 +3322,7 @@ product-reviews-page .page-body .write-review .fieldset .form-fields {
     }
 
         .product-review-item .review-info label {
-            font-weight: normal;
+            font-weight: bolder;
         }
 
         .product-review-item .review-info a,
@@ -4147,9 +4146,9 @@ label {
 .address-list-page .info,
 .order-list-page .info {
     margin: 0 0 10px;
-    border-top: 1px solid #e6e6e6;
-    background-color: #f9f9f9;
-    padding: 20px;
+    border: 1px solid #054122;
+    background-color: white;
+    padding: 20px;inputs
     line-height: 26px;
     color: #444;
 }
@@ -4214,7 +4213,7 @@ label {
 .address-edit-page .edit-address {
     margin: 0 0 30px;
     border-top: 1px solid #e6e6e6;
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 30px 15px;
 }
 
@@ -4578,6 +4577,7 @@ label {
     width: 50%;
     padding: 5px 0;
     text-align: right;
+
 }
 
     .cart-total td:first-child {
@@ -7172,6 +7172,7 @@ pre {
         .cart tbody {
             display: block;
             overflow: hidden;
+            
         }
 
         .cart tr {
@@ -7179,12 +7180,16 @@ pre {
             float: left;
             width: 100%;
             margin: 40px 0 0;
-            /*  border-bottom: 1px solid #ddd;*/
+            
         }
 
         .cart td {
             display: block;
             padding: 10px;
+            border-bottom: 3px solid green;
+        }
+        .cart item-row {
+            border-bottom: 1px solid #aaa;
         }
 
             .cart td.remove-from-cart {
@@ -7201,7 +7206,6 @@ pre {
 
             .cart td.product {
                 min-width: 0;
-                border-bottom: 1px solid #ddd;
                 padding: 5px 10px 15px;
                 text-align: center;
             }
@@ -7390,10 +7394,12 @@ pre {
     .cart tr {
         width: 46%;
         margin: 40px 2% 0;
+
     }
 
-        .cart tr:nth-child(2n+1) {
+        .cart tr:nth-child(n+1) {
             clear: both;
+            border-bottom: 1px solid #ddd;
         }
 
     .order-details-page .data-table tr {
@@ -8775,7 +8781,8 @@ pre {
         .block .title {
             margin: 0;
             border-bottom: 1px solid #ddd;
-            background: none;
+            background: black;
+            color:white;
             cursor: auto;
         }
 
