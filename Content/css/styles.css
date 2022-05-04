@@ -1277,19 +1277,21 @@ label, label + * {
         width: 300px;
         text-align: center;
         height: 40px;
-        margin: -11px -1px 0 0;
+        margin: 10px;
+        border-radius: 20px;
     }
 
     .newsletter-email .button-1.newsletter-subscribe-button {
         position: relative;
-        height: 36px;
-        margin: 0px 0px 0px 10px;
+        height: 40px;
+        margin: 10px;
         border: none;
         background-color: #2d9c6d;
         color: white;
         width: 120px;
         font-size: 12px;
         text-transform: uppercase;
+        border-radius: 20px;
     }
 
     .newsletter-email .options {
@@ -1750,10 +1752,11 @@ label, label + * {
     border: 1px solid #ddd;
 }
 
-    .item-box:hover .buttons{
+    .item-box:hover{
         box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
     }
 
+ 
     .item-box .picture {
         z-index: 1;
         height: inherit;
@@ -8746,6 +8749,7 @@ pre {
 
         .newsletter-email input[type="text"] {
             width: 200px;
+          
         }
 
         .newsletter-email .newsletter-subscribe-button {
