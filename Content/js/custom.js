@@ -75,50 +75,53 @@
       }
     }
   });
-  /* Used js for BackTop Page Scrolling*/
-  (function ($) {
-    $.fn.backTop = function (options) {
-      var backBtn = this;
-      var settings = $.extend({
-        'position': 400,
-        'speed': 500,
-      }, options);
 
-      //Settings
-      var position = settings['position'];
-      var speed = settings['speed'];
+  ///* Used js for BackTop Page Scrolling*/
+  //(function ($) {
+  //  $.fn.backTop = function (options) {
+  //    var backBtn = this;
+  //    var settings = $.extend({
+  //      'position': 400,
+  //      'speed': 500,
+  //    }, options);
 
-      backBtn.css({
-        'right': 40,
-        'bottom': 40,
-        'position': 'fixed',
-      });
+  //    //Settings
+  //    var position = settings['position'];
+  //    var speed = settings['speed'];
 
-      $(document).scroll(function () {
-        var pos = $(window).scrollTop();
+  //    backBtn.css({
+  //      'right': 40,
+  //      'bottom': 20,
+  //      'position': 'fixed',
+  //    });
 
-        if (pos >= position) {
-          backBtn.fadeIn(speed);
-        } else {
-          backBtn.fadeOut(speed);
-        }
-      });
+  //    $(document).scroll(function () {
+  //      var pos = $(window).scrollTop();
 
-      backBtn.click(function () {
-        $("html, body").animate({
-          scrollTop: 0
-        },
-          {
-            duration: 1200
-          });
-      });
-    }
-  }(jQuery));
+  //      if (pos >= position) {
+  //        backBtn.fadeIn(speed);
+  //      } else {
+  //        backBtn.fadeOut(speed);
+  //      }
+  //    });
 
-  $('#backTop').backTop({
-    'position': 200,
-    'speed': 500,
-  });
+  //    backBtn.click(function () {
+  //      $("html, body").animate({
+  //        scrollTop: 0
+  //      },
+  //        {
+  //          duration: 1200
+  //        });
+  //    });
+  //  }
+  //}(jQuery));
+
+  //$('#btn-back-to-top').backTop({
+  //  'position': 200,
+  //  'speed': 500,
+  //});
+
+
   $('#home-news-slider').owlCarousel({
     loop: true,
     dots: false,
