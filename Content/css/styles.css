@@ -15,7 +15,7 @@
     }
 
 html {
-    margin: 0;
+     margin: 0;
     -webkit-text-size-adjust: none;
 }
 
@@ -101,9 +101,9 @@ a {
 }
 
     .header-links ul {
-        margin-left: 30%;
+        margin-left: 50%;
         font-size: 0;
-        text-align:right;
+        text-align: center;
     }
 
     .header-links li {
@@ -976,15 +976,17 @@ label, label + * {
     font-family: 'Montserrat', sans-serif;
     color: white;
     position: relative;
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 .header-links {
 }
 
     .header-links ul {
+        margin-left: 50%;
         font-size: 0;
         margin-bottom: 0;
+        position: relative;
     }
 
     .header-links li {
@@ -1748,7 +1750,7 @@ label, label + * {
     border: 1px solid #ddd;
 }
 
-    .item-box:hover {
+    .item-box:hover .buttons{
         box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
     }
 
@@ -7022,7 +7024,8 @@ pre {
     }
 
     .header-links ul {
-        margin:auto;
+          margin-left: 50%;
+          text-align: center;
     }
 
     .theme-custom {
@@ -7382,7 +7385,7 @@ pre {
         height: 50px;
     }
 
-@media all and (min-width: 481px) {
+@media all and (min-width: 320px) {
 
     /*** GLOBAL ***/
 
@@ -8364,6 +8367,7 @@ pre {
         font-family: 'Montserrat';
         width: 100%;
         margin: auto;
+        background-color: whitesmoke;
     }
 
     .header-upper:after {
@@ -8399,7 +8403,6 @@ pre {
     }
 
     .header-links-wrapper {
-        float: left;
         padding: 5px;
         background-color: whitesmoke;
     }
@@ -8422,7 +8425,6 @@ pre {
         width: auto;
         margin: 0;
         padding: 0 10px;
-        float:right;
     }
 
     .header-menu {
@@ -8568,7 +8570,8 @@ pre {
 
     .header-lower {
         display: table;
-        width: 100%;
+        width: 93%;
+        background-color: whitesmoke;
     }
 
     .header-logo {
@@ -9269,6 +9272,7 @@ pre {
 
     .header {
         width: 100%;
+        background-color: whitesmoke;
     }
 
     /* PRODUCT SLIDER STYLE */
