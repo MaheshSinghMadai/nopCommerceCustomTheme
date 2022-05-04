@@ -7272,7 +7272,6 @@ pre {
 
     .header-menu {
         position: relative;
-        top: 0;
         z-index: 1;
         width: 100%;
         background-color: #008080;
@@ -8427,13 +8426,15 @@ pre {
     }
 
     .header-menu {
-        position: sticky;
+        position: relative;
         z-index: 5;
         width: 100%;
-        margin: 10px;
+        margin: 0 auto 30px;
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
         text-align: center;
+        position: sticky;
+        top: -1px;
         color: white;
         height: auto;
         background-color: teal;
@@ -9413,6 +9414,11 @@ pre {
 
     .header-menu {
         width: 100%;
+        text-align: center;
+        position: sticky;
+        top: -1px;
+        background: white;
+        box-shadow: 0px 2px 2px -2px #444;
     }
 
         .header-menu > ul > li {
