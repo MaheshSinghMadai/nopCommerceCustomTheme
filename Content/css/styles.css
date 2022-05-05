@@ -1067,7 +1067,7 @@ label, label + * {
 
 .search-box input.search-box-text {
     float: left;
-    width: 70%;
+    width: 62%;
     height: 36px;
     margin: 0 2px 0 0;
     padding: 15px 0 15px 15px;
@@ -1081,7 +1081,7 @@ label, label + * {
     height: 36px;
     border: 1px solid green;
     background-color: #555;
-    margin-right: 15px;
+    margin-right: 1px;
     text-align: center;
     font-size: 12px;
     color: #fff;
@@ -1654,6 +1654,8 @@ label, label + * {
     .product-selectors span {
         vertical-align: middle;
         font-size: 16px;
+        color: #0a550b;
+        font-weight: bolder;
     }
 
     .product-selectors select {
@@ -1987,9 +1989,10 @@ label, label + * {
             padding-top: 65%;
         }
 
-.products-container {
-    position: relative;
-}
+
+    .products-container {
+        position: relative;
+    }
 
     .products-container .ajax-products-busy {
         display: none;
@@ -7344,7 +7347,7 @@ pre {
 
     .top-menu {
         display: none;
-        background-color: #08aa3d;
+        background-color: #24282c;
     }
 
 
@@ -7375,6 +7378,7 @@ pre {
                     display: block;
                     padding: 15px 18px;
                     font-size: 15px;
+                    color: #2d9c6d;
                 }
 
     .sublist-toggle {
