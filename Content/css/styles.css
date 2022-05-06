@@ -97,7 +97,7 @@ a {
 }
 
 .header-links {
-    margin: 10px;
+    margin: 0px;
 }
 
     .header-links ul {
@@ -1159,7 +1159,7 @@ label, label + * {
 
 
 .footer {
-    background-color: #248ece;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -1174,7 +1174,7 @@ label, label + * {
 
 
 .footer-block {
-    width: 95%;
+    width: 100%;
     margin: 1px auto;
     text-align: left;
     font-size: 14px; /*reset zeroing*/
@@ -1182,7 +1182,7 @@ label, label + * {
 
     .footer-block .title {
         margin: 0 0 1px;
-        background: #4ab2f1 url('../images/toggle-white.png') right center no-repeat;
+        background: #0a2d42 url('../images/toggle-white.png') right center no-repeat;
         padding: 10px 15px;
         font-size: 20px;
         color: #fff;
@@ -8470,7 +8470,7 @@ pre {
     }
 
     .header-links-wrapper {
-        padding: 5px;
+        padding: 0px;
         background-color: whitesmoke;
     }
 
