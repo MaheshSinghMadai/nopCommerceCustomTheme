@@ -290,7 +290,7 @@ label, label + * {
 .post-body p,
 .news-body p {
     margin: 10px 0;
-    text-align: justify;
+    text-align: center;
 }
 
 .flyout-cart {
@@ -325,7 +325,7 @@ label, label + * {
 .form-fields {
     position: relative;
     background-color: white;
-    padding: 30px 15px;
+    padding: 0;
 }
 
 .inputs {
@@ -334,6 +334,7 @@ label, label + * {
     text-align: center;
     white-space: nowrap; /*fix for 'required' elements*/
     font-size: 0;
+    color:black;
 }
 
     .inputs:after {
@@ -3694,7 +3695,7 @@ product-reviews-page .page-body .write-review .fieldset .form-fields {
 .apply-vendor-page .button-1 {
     min-width: 140px;
     border: none;
-    background-color: #4ab2f1;
+    background-color: #161e31;
     padding: 10px 30px;
     text-align: center;
     font-size: 15px;
@@ -3871,11 +3872,11 @@ label {
 .account-activation-page .button-1,
 .account-page .button-1,
 .return-request-page .button-1 {
-    width:80%;
+    width:30%;
     border: none;
     background-color: forestgreen;
     border-radius: 18px;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
     font-size: 100%;
     color: #fff;
@@ -3883,6 +3884,7 @@ label {
     opacity: 1.0;
     font-family: 'Montserrat', sans-serif;
 }
+
 
     .registration-page .button-1:hover,
     .registration-page .button-1:focus,
@@ -5872,7 +5874,7 @@ label {
     margin: 0 0 15px;
     background-color: #f6f6f6;
     padding: 10px;
-    font-style: italic;
+    font-style: normal;
     color: #444;
 }
 
@@ -5951,7 +5953,7 @@ label {
     .news-items .buttons .read-more {
         display: inline-block;
         border: none;
-        background-color: #4ab2f1;
+        background-color: #161e31;
         padding: 10px 20px;
         font-size: 12px;
         color: #fff;
@@ -5962,7 +5964,8 @@ label {
         .blog-posts .buttons .read-more:focus,
         .news-items .buttons .read-more:hover,
         .news-items .buttons .read-more:focus {
-            background-color: #248ece;
+            opacity: 0.85;
+            text-decoration: none;
         }
 
 .new-comment {
@@ -5983,7 +5986,7 @@ label {
 
     .new-comment .button-1 {
         border: none;
-        background-color: #4ab2f1;
+        background-color: #161e31;
         padding: 10px 30px;
         text-align: center;
         font-size: 15px;
@@ -5993,7 +5996,7 @@ label {
 
         .new-comment .button-1:hover,
         .new-comment .button-1:focus {
-            background-color: #248ece;
+            opacity: 0.85;
         }
 
 .comment-list {
