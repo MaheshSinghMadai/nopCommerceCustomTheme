@@ -2025,7 +2025,7 @@ label, label + * {
 
 .product-grid,
 .product-list {
-    margin: 70px 0 50px;
+    margin-top: 12%;
 }
 
     .product-grid .title {
@@ -4474,7 +4474,7 @@ label {
     text-align: left;
     color: black;
     padding: 10px;
-    border-left: 5px solid #4ab2f1;
+    /*border-left: 5px solid #4ab2f1;*/
     letter-spacing: 0.6rem;
     font-size: 40px;
     font-weight: bold;
@@ -7044,7 +7044,17 @@ pre {
         display: block;
     }
 
-    .write-review .review-rating div {
+    .cart-collaterals .title::after {
+        content: "";
+        background: #2d9c6d;
+        width: 40px;
+        height: 3px;
+        position: absolute;
+        left: 45%;
+        margin-top: 28px;
+    }
+
+        .write-review .review-rating div {
         text-align: center;
         padding-bottom: 10px;
         display: inline-block;
@@ -7657,7 +7667,7 @@ pre {
 
     .item-box {
         width: 70%;
-        margin: 40px 80px 40px 80px;
+        margin: 5% 10% 5% 15%;
         text-align: center;
     }
 
@@ -7907,8 +7917,8 @@ pre {
                 }
 
     .item-box {
-        width: 45%;
-        margin: 2%;
+        width: 40%;
+        margin: 5% 5% 5% 5%;
     }
 
         .item-box:nth-child(2n+1) {
@@ -7922,7 +7932,7 @@ pre {
     .product-list .item-box {
         float: none;
         width: auto;
-        margin: 50px;
+        /*margin: 5% 10% 5% 15%;*/
     }
 
         .product-list .item-box .product-item:after {
@@ -7932,7 +7942,7 @@ pre {
         }
 
         .product-list .item-box .picture {
-            float: left;
+           /* float: left;*/
             width: 220px;
         }
 
@@ -8813,7 +8823,7 @@ pre {
         position: sticky;
         z-index: 5;
         width: 100%;
-        margin: 0px 0px 5px;
+        margin:0px;
         border-top: 1px solid #ddd;
         /*border-bottom: 1px solid #ddd;*/
         padding: 15px 0;

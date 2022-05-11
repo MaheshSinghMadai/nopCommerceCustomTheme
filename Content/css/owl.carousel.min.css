@@ -52,10 +52,10 @@
  }
  .owl-carousel .owl-item img{
      display:block;
-     width:100%;
+     width:105%;
      height:300px;
      border-radius:5px;
-     margin-top:20px;
+     margin: 15px;
  }
  .owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{
      display:none
