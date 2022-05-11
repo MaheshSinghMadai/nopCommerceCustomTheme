@@ -3,15 +3,17 @@
 {
     <div class="product-grid home-page-product-grid">
         <div class="title">
-            <strong>@T("Homepage.Products")</strong>
+           @T("Homepage.Products")
         </div>
-        <div class="item-grid">
-            @foreach (var item in Model)
-            {
-                <div class="item-box">
-                    @await Html.PartialAsync("_ProductBox", item)
-                </div>
-            }
+        <div class="row">
+            <div class="item-grid">
+                @foreach (var item in Model)
+                {
+                    <div class="item-box">
+                        @await Html.PartialAsync("_ProductBox", item)
+                    </div>
+                }
+            </div>
         </div>
     </div>
 }

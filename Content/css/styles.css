@@ -69,7 +69,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: #fff;
-    font: normal 14px Montserrat, sans-serif;
+    font: normal 14px 'Montserrat', sans-serif;
     color: #777;
 }
 
@@ -723,7 +723,7 @@ label, label + * {
     /*override jQuery UI styles, do not delete doubled properties*/
     border-radius: 0;
     padding: 0;
-    font: normal 14px Arial, Helvetica, sans-serif;
+    font: normal 14px 'Montserrat', sans-serif;
 }
 
     .ui-dialog:before {
@@ -1116,7 +1116,7 @@ label, label + * {
     /*override jQuery UI styles, do not delete doubled properties*/
     border-radius: 0;
     padding: 0;
-    font: normal 14px Arial, Helvetica, sans-serif;
+    font: normal 14px 'Montserrat', sans-serif;
 }
 
     .ui-autocomplete li {
@@ -1758,6 +1758,7 @@ label, label + * {
     .item-grid{
         height:auto;
     }
+
 .item-box {
     position: relative;
     width: 100%;
@@ -1969,18 +1970,32 @@ label, label + * {
         font-size: 50px;
         letter-spacing: .4rem;
         font-weight: normal;
-        margin: 20px;
+        margin: 30px;
         color: #303133;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         font-weight:bold;
+        border-bottom: 1px solid #eee;
+        padding-bottom:25px;
     }
+        .home-page-category-grid .title::after {
+            background: url(../images/ribbon-bow.jpg) no-repeat;
+            content: "";
+            left: 47%;
+            position: absolute;
+            top: 80%;
+            height: 50px;
+            width: 60px;
+            margin-bottom:20px;
+        }
 
         .home-page-category-grid .title a,
         .sub-category-grid .title a {
             display: block;
             padding: 0 0 15px;
         }
+
+       
 
     .home-page-category-grid .picture,
     .sub-category-grid .picture {
@@ -2012,18 +2027,28 @@ label, label + * {
 }
 
     .product-grid .title {
-        margin: 0 0 30px;
-        border-bottom: 1px solid #ddd;
-        padding: 0 0 15px;
+        text-align: center;
         font-size: 50px;
-        font-weight: bolder;
-        color: #303133;
         letter-spacing: .4rem;
-
+        font-weight: normal;
+        margin: 30px;
+        color: #303133;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        font-weight: bold;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 25px;
     }
 
-        .product-grid .title strong {
-            font-weight: normal;
+        .product-grid .title::after {
+            background: url(../images/ribbon-bow.jpg) no-repeat;
+            content: "";
+            left: 40%;
+            position: absolute;
+           /* top: 100%;*/
+            height: 50px;
+            width: 60px;
+            margin: 65px;
         }
 
 .manufacturer-grid .title {
@@ -2920,7 +2945,7 @@ label, label + * {
     border: none;
     border-radius: 0;
     padding: 0;
-    font: normal 14px Arial, Helvetica, sans-serif;
+    font: normal 14px 'Montserrat', sans-serif;
     color: #777;
 }
 
@@ -6877,7 +6902,7 @@ label {
     /*override jQuery UI styles, do not delete doubled properties*/
     line-height: normal;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #777;
 }
 
@@ -6903,7 +6928,7 @@ label {
     /*override jQuery UI styles, do not delete doubled properties*/
     line-height: normal;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Montserrat', sans-serif;
     color: #777;
 }
 
@@ -9555,8 +9580,8 @@ pre {
         position: absolute;
         right: -70px;
         text-indent: -9999px;
-        width: 50px;
-        margin: 15px;
+        width: 80px;
+        margin-top: 50px;
     }
 
     .owl-carousel .owl-prev {
@@ -9566,7 +9591,8 @@ pre {
         left: -70px;
         position: absolute;
         text-indent: -9999px;
-        width: 50px;
+        width: 80px;
+        margin-top: 50px;
     }
 
     .owl-carousel .owl-next:hover {
