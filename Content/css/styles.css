@@ -1194,6 +1194,8 @@ label, label + * {
             font-weight: normal;
         }
 
+
+
     .footer-block .list {
         display: none;
         margin: 0 0 20px;
@@ -4754,7 +4756,7 @@ label {
             width: 40px;
             height: 3px;
             position: absolute;
-            left: 30px;
+            left: 3%;
             margin-top: 28px;
         }
 
@@ -8860,12 +8862,14 @@ pre {
                     color: #f5a707;
                     text-decoration: none;
                 }
+
     .header-menu .sublist {
-        border-radius: 20px;
+        border-radius: 10px;
         display: none;
         position: absolute;
         width: 280px;
         height:auto;
+        margin-top:10px;
         box-shadow: 0 0 2px rgba(0,0,0,0.2);
         background-color: #fff;
         /*padding: 2px;*/
@@ -8900,7 +8904,7 @@ pre {
             .header-menu .sublist li:focus > a {
                 background-color: #2d9c6d;
                 color: white;
-                border-radius: 20px;
+               /* border-radius: 20px;*/
             }
 
     .header-menu ul li:hover > .sublist,
@@ -8935,6 +8939,7 @@ pre {
     .footer-block .title{
        font-weight: bolder;
     }
+
 
         .footer-block:first-child {
         }
