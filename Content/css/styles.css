@@ -87,6 +87,7 @@ a {
     }
 
 
+ 
 .header-links-wrapper {
     width: 100%;
     background-color: #303133;
@@ -1581,7 +1582,7 @@ label, label + * {
 
 
 .breadcrumb {
-    margin: 0 0 50px;
+    margin: 20px 0 40px;
     background-color: #f6f6f6;
     padding: 5px 10px;
 }
@@ -7918,7 +7919,7 @@ pre {
 
     .item-box {
         width: 40%;
-        margin: 5% 5% 5% 5%;
+        margin: 0% 5% 5% 5%;
     }
 
         .item-box:nth-child(2n+1) {
@@ -8506,6 +8507,7 @@ pre {
 
     .page {
         text-align: left;
+        margin: 0px;
     }
 
     .inputs {
@@ -9029,8 +9031,8 @@ pre {
 
     .block {
         float: none;
-        width: auto;
-        margin: 0 0 20px;
+        width: 100%;
+        margin-bottom: 10%;
     }
 
         .block .title {
@@ -9075,7 +9077,7 @@ pre {
 
 
     .breadcrumb {
-        margin: 0 0 20px;
+        margin: 20px 0 40px;
     }
 
     .item-box .buttons {
