@@ -11,8 +11,7 @@
              style="background-color:black;
                     margin-bottom:20px;
                     padding:30px;
-                    width:100%"
-             >
+                    width:100%">
             @await Component.InvokeAsync("NewsletterBox")
         </div>
         <div class="footer-block information">
@@ -22,13 +21,16 @@
             <ul class="list">
                 @if (Model.SitemapEnabled && Model.DisplaySitemapFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("Sitemap")">@T("Sitemap")</a></li>}
+                    <li><a href="@Url.RouteUrl("Sitemap")">@T("Sitemap")</a></li>
+}
                 @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn1).ToList())
                 {
-    <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>}
+                    <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+}
                 @if (Model.DisplayContactUsFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>}
+                    <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+}
             </ul>
         </div>
         <div class="footer-block customer-service">
@@ -38,31 +40,40 @@
             <ul class="list">
                 @if (Model.SearchEnabled && Model.DisplayProductSearchFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a> </li>}
+                    <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a> </li>
+}
                 @if (Model.NewsEnabled && Model.DisplayNewsFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("NewsArchive")">@T("News")</a></li>}
+                    <li><a href="@Url.RouteUrl("NewsArchive")">@T("News")</a></li>
+}
                 @if (Model.BlogEnabled && Model.DisplayBlogFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>}
+                    <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>
+}
                 @if (Model.ForumEnabled && Model.DisplayForumsFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>}
+                    <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
+}
                 @if (Model.RecentlyViewedProductsEnabled && Model.DisplayRecentlyViewedProductsFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("RecentlyViewedProducts")">@T("Products.RecentlyViewedProducts")</a></li>}
+                    <li><a href="@Url.RouteUrl("RecentlyViewedProducts")">@T("Products.RecentlyViewedProducts")</a></li>
+}
                 @if (Model.CompareProductsEnabled && Model.DisplayCompareProductsFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("CompareProducts")">@T("Products.Compare.List")</a></li>}
+                    <li><a href="@Url.RouteUrl("CompareProducts")">@T("Products.Compare.List")</a></li>
+}
                 @if (Model.NewProductsEnabled && Model.DisplayNewProductsFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a></li>}
+                    <li><a href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a></li>
+}
                 @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn2).ToList())
                 {
-    <li><a href="@Url.RouteUrl("Topic", new {SeName = topic.SeName})">@topic.Name</a></li>}
+                    <li><a href="@Url.RouteUrl("Topic", new {SeName = topic.SeName})">@topic.Name</a></li>
+}
                 @if (Model.AllowCustomersToCheckGiftCardBalance)
                 {
-    <li><a href="@Url.RouteUrl("CheckGiftCardBalance")">@T("CheckGiftCardBalance")</a></li>}
+                    <li><a href="@Url.RouteUrl("CheckGiftCardBalance")">@T("CheckGiftCardBalance")</a></li>
+}
             </ul>
         </div>
         <div class="footer-block my-account">
@@ -72,25 +83,32 @@
             <ul class="list">
                 @if (Model.DisplayCustomerInfoFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>}
+                    <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
+}
                 @if (Model.DisplayCustomerOrdersFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("CustomerOrders")">@T("Account.CustomerOrders")</a></li>}
+                    <li><a href="@Url.RouteUrl("CustomerOrders")">@T("Account.CustomerOrders")</a></li>
+}
                 @if (Model.DisplayCustomerAddressesFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("CustomerAddresses")">@T("Account.CustomerAddresses")</a></li>}
+                    <li><a href="@Url.RouteUrl("CustomerAddresses")">@T("Account.CustomerAddresses")</a></li>
+}
                 @if (Model.ShoppingCartEnabled && Model.DisplayShoppingCartFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("ShoppingCart")">@T("ShoppingCart")</a></li>}
+                    <li><a href="@Url.RouteUrl("ShoppingCart")">@T("ShoppingCart")</a></li>
+}
                 @if (Model.WishlistEnabled && Model.DisplayWishlistFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("Wishlist")">@T("Wishlist")</a></li>}
+                    <li><a href="@Url.RouteUrl("Wishlist")">@T("Wishlist")</a></li>
+}
                 @if (Model.AllowCustomersToApplyForVendorAccount && Model.DisplayApplyVendorAccountFooterItem)
                 {
-    <li><a href="@Url.RouteUrl("ApplyVendorAccount")">@T("Vendors.ApplyAccount")</a></li>}
+                    <li><a href="@Url.RouteUrl("ApplyVendorAccount")">@T("Vendors.ApplyAccount")</a></li>
+}
                 @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn3).ToList())
                 {
-    <li><a href="@Url.RouteUrl("Topic", new {SeName = topic.SeName})">@topic.Name</a></li>}
+                    <li><a href="@Url.RouteUrl("Topic", new {SeName = topic.SeName})">@topic.Name</a></li>
+}
             </ul>
         </div>
         <div class="footer-block follow-us">
@@ -100,33 +118,47 @@
                 </div>
                 @await Component.InvokeAsync("SocialButtons")
             </div>
-         
+
         </div>
     </div>
     <div class="footer-lower">
-        <div class="footer-info">
-            <ul class="list">
-                <li><span class="footer-disclaimer">@T("Content.CopyrightNotice", DateTime.Now.Year, Model.StoreName)</span>
-                <li>Designed by <a href="https://nestrait.com/"> NestraIT</a></li>
-            </ul>
-            
-            @if (Model.DisplayTaxShippingInfoFooter)
-            {
-                var inclTax = await workContext.GetTaxDisplayTypeAsync() == TaxDisplayType.IncludingTax;
-                <span class="footer-tax-shipping">
-                    @T(inclTax ? "Footer.TaxShipping.InclTax" : "Footer.TaxShipping.ExclTax", Url.RouteUrl("Topic", new { SeName = await Html.GetTopicSeNameAsync("shippinginfo") }))
-                </span>
-            }
-        </div>
-        @if (!Model.HidePoweredByNopCommerce)
-        {
-            <div class="footer-powered-by">
-                @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
-                    Please find more info at https://www.nopcommerce.com/nopcommerce-copyright-removal-key*@
-                Powered by <a href="">nopCommerce</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-5">
+                    <div class="footer-information">
+                        @if (Model.DisplayTaxShippingInfoFooter)
+                        {
+                            var inclTax = await workContext.GetTaxDisplayTypeAsync() == TaxDisplayType.IncludingTax;
+                            <span class="footer-tax-shipping">
+                                @T(inclTax ? "Footer.TaxShipping.InclTax" : "Footer.TaxShipping.ExclTax", Url.RouteUrl("Topic", new { SeName = await Html.GetTopicSeNameAsync("shippinginfo") }))
+                            </span>
+                        }
+                    </div>
+                    @if (!Model.HidePoweredByNopCommerce)
+                    {
+                        <div class="poweredby" style="text-align: left;margin:15px 0px 15px 0px;">
+                            @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
+                                Please find more info at https://www.nopcommerce.com/nopcommerce-copyright-removal-key*@
+                            Powered by <a href="https://www.nopcommerce.com/en"
+                                          style="color:#2d9c6d;"
+                                          >nopCommerce</a>
+                        </div>
+                    }
+                    <div class="footer-disclaimer"  style="text-align: left;">
+                        @T("Content.CopyrightNotice", DateTime.Now.Year.ToString(), Model.StoreName)
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 footer-store-theme">
+                    @await Component.InvokeAsync("StoreThemeSelector")
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4" style="margin:15px 0px 15px 0px;">
+                    <div class="designedby pull-right">
+                        <div class="footer-theme-credit"></div>
+                        <div class="footer-designedby">Designed by <a  href="http://www.nopaccelerate.com/" style="color:#2d9c6d;">NestraIT</a></div>
+                    </div>
+                </div>
             </div>
-        }
-        @await Component.InvokeAsync("StoreThemeSelector")
+        </div>
     </div>
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.Footer })
 </div>

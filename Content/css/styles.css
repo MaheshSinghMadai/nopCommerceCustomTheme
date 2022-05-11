@@ -1323,10 +1323,10 @@ label, label + * {
 
 .footer-lower {
     width: 100%;
-    margin: auto;
+    /*margin: auto;*/
     overflow: hidden;
     padding: 25px 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer-tax-shipping a {
@@ -1967,12 +1967,13 @@ label, label + * {
     .sub-category-grid .title {
         text-align: center;
         font-size: 50px;
-        letter-spacing: .7rem;
+        letter-spacing: .4rem;
         font-weight: normal;
         margin: 20px;
         color: #303133;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
+        font-weight:bold;
     }
 
         .home-page-category-grid .title a,
@@ -2015,9 +2016,10 @@ label, label + * {
         border-bottom: 1px solid #ddd;
         padding: 0 0 15px;
         font-size: 50px;
-        font-weight: bold;
+        font-weight: bolder;
         color: #303133;
-        letter-spacing: .5rem;
+        letter-spacing: .4rem;
+
     }
 
         .product-grid .title strong {
@@ -7442,7 +7444,7 @@ pre {
         position: relative;
         z-index: 1;
         width: 100%;
-        background-color: #008080;
+        background-color: #2d9c6d;
         color: white;
     }
 
@@ -8453,7 +8455,6 @@ pre {
     /*** GLOBAL STYLES ***/
     .master-wrapper-content {
         width: 80%;
-        margin: auto;
     }
 
     .center-2 {
@@ -8609,15 +8610,16 @@ pre {
         position: relative;
         z-index: 5;
         width: 100%;
-        margin: 0 auto 30px;
+        margin-bottom: 20px;
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
         text-align: center;
         position: sticky;
-        top: -1px;
+        /*top: -1px;*/
         color: white;
-        height: auto;
-        background-color: teal;
+        height: 50px;
+        background-color: #2D9C6d;
+        
     }
 
     .flyout-cart {
@@ -8784,11 +8786,12 @@ pre {
         position: sticky;
         z-index: 5;
         width: 100%;
-        margin: 5px 0px 70px;
+        margin: 0px 0px 5px;
         border-top: 1px solid #ddd;
         /*border-bottom: 1px solid #ddd;*/
         padding: 15px 0;
         text-align: center;
+        height:60px;
     }
 
     .menu-toggle,
@@ -8818,11 +8821,13 @@ pre {
 
             .header-menu > ul > li > a {
                 display: block;
-                padding: 5px 10px;
-                line-height: 20px;
-                font-size: 17px; /*reset zeroing*/
+                padding: 0px 14px;
+                line-height: 25px;
+                font-size: 14px; /*reset zeroing*/
                 color: white;
                 cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bolder;
             }
 
                 .header-menu > ul > li > a:hover,
@@ -8944,8 +8949,10 @@ pre {
 
     .footer-lower {
         position: relative;
-        width: 980px;
-        padding: 25px 5px;
+        width: 100%;
+        padding: 10px 80px;
+        background-color: #303133;
+        color:white;
     }
 
         .footer-lower:after {
@@ -8960,7 +8967,7 @@ pre {
     }
 
     .footer-info a{
-        color: #4AB2F1;
+        color: #2d9c6d;
         font-weight: bold;
     }
 
@@ -8968,6 +8975,7 @@ pre {
         float: left;
         margin: 0;
         line-height: 32px;
+        color: #2d9c6d;
     }
 
     .theme-selector {
@@ -9606,7 +9614,7 @@ pre {
         text-align: center;
         position: sticky;
         top: -1px;
-        background: teal;
+        background:#2d9c6d;
         box-shadow: 0px 2px 2px -2px #444;
     }
 
@@ -9634,8 +9642,8 @@ pre {
     }
 
     .footer-lower {
-        width: 1200px;
-        padding: 25px 20px;
+        width: 100%;
+       /* padding: 25px 20px;*/
     }
 
 
