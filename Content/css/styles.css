@@ -8868,6 +8868,7 @@ pre {
             border-left: 1px #ddd;
             padding: 0 15px;
             vertical-align: middle;
+
         }
 
             .header-menu > ul > li:first-child {
@@ -8883,12 +8884,13 @@ pre {
                 cursor: pointer;
                 text-transform: uppercase;
                 font-weight: bolder;
+
             }
 
-                .header-menu > ul > li > a:hover,
+                .header-menu > ul > li > a:hover::after,
                 .header-menu > ul > li > a:focus {
                     color: #f5a707;
-                    text-decoration: none;
+                    text-decoration: none;    
                 }
 
     .header-menu .sublist {
