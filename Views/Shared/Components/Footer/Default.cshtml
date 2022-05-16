@@ -134,30 +134,43 @@
                             </span>
                         }
                     </div>
-                    @if (!Model.HidePoweredByNopCommerce)
+                    <div class="col-xs-12 col-sm-8 col-md-8" style="margin:5px 0px 5px 0px;">
+                        <div class="designedby pull-left">
+                            <div class="footer-theme-credit"></div>
+                            <div class="footer-designedby">Designed by <a href="https://nestrait.com/" style="color:#2d9c6d;">NestraIT</a></div>
+                        </div>
+                    </div>
+
+                    @*@if (!Model.HidePoweredByNopCommerce)
                     {
                         <div class="poweredby" style="text-align: left;margin:15px 0px 15px 0px;">
-                            @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
-                                Please find more info at https://www.nopcommerce.com/nopcommerce-copyright-removal-key*@
+                            Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
+                                Please find more info at https://www.nopcommerce.com/nopcommerce-copyright-removal-key
                             Powered by <a href="https://www.nopcommerce.com/en"
                                           style="color:#2d9c6d;"
                                           >nopCommerce</a>
                         </div>
-                    }
-                    <div class="footer-disclaimer"  style="text-align: left;">
-                        @T("Content.CopyrightNotice", DateTime.Now.Year.ToString(), Model.StoreName)
-                    </div>
+                    }*@
+
                 </div>
+
                 <div class="col-xs-12 col-sm-3 col-md-3 footer-store-theme">
                     @await Component.InvokeAsync("StoreThemeSelector")
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4" style="margin:15px 0px 15px 0px;">
-                    <div class="designedby pull-right">
-                        <div class="footer-theme-credit"></div>
-                        <div class="footer-designedby">Designed by <a  href="http://www.nopaccelerate.com/" style="color:#2d9c6d;">NestraIT</a></div>
-                    </div>
+                <div class="footer-disclaimer" style="text-align: right;margin-top:15px;">
+                    @T("Content.CopyrightNotice", DateTime.Now.Year.ToString(), Model.StoreName)
                 </div>
             </div>
+            @if (!Model.HidePoweredByNopCommerce)
+            {
+                <div class="poweredby" style="text-align: left;margin:5px 0px 5px 15px;">
+                    @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
+                Please find more info at https://www.nopcommerce.com/nopcommerce-copyright-removal-key*@
+                    Powered by <a href="https://www.nopcommerce.com/en"
+                                  style="color:#2d9c6d;">nopCommerce</a>
+                </div>
+            }
+          
         </div>
     </div>
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.Footer })
