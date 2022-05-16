@@ -8807,7 +8807,15 @@ pre {
         background-color: whitesmoke;
     }
 
+.slider-wrapper.theme-custom {
+    margin-top: 0px;
+    display: none;
+}
 
+.html-home-page .slider-wrapper.theme-custom {
+    display: block;
+    margin-bottom: 20px;
+}
     .header-links li {
         margin: 0 12px;
     }
