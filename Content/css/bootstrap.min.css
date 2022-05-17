@@ -5226,8 +5226,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-collapse {
-    padding-right: 5%;
-    padding-left: 15%;
+    padding-right: 0%;
+    padding-left: 8%;
     overflow-x: visible;
     background-color: #2d9c6d;
     -webkit-overflow-scrolling: touch;

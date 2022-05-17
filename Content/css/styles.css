@@ -7091,10 +7091,6 @@ pre {
         border-color: #fff;
     }
 
-    .form-title-rquired {
-        margin-top: 0px;
-    }
-
     .header-menu .main-menu {
         background: #2d9c6d;
     }
@@ -7160,6 +7156,7 @@ pre {
     .header-menu .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
         background: none;
     }
+
     .header-menu .navbar.navbar-inverse .nav.navbar-nav > li {
         float: left;
         width: 100%;
@@ -7202,6 +7199,107 @@ pre {
     .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown > a:hover:before {
         background: none;
     }
+
+    /* Sub Category Toggle*/
+    .header-menu li.dropdown .dropdown-menu li.dropdown:hover > .dropdown-menu {
+        display: none;
+    }
+
+    .header-menu li.dropdown.open .dropdown-menu {
+        display: block;
+    }
+
+    #mobile-menu .dropdown .fa-angle-down {
+        position: absolute;
+        right: 0px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 9;
+        -webkit-transition: all 0.2s;
+        -webkit-transition-timing-function: linear;
+        transition: all 0.2s;
+        transition-timing-function: linear;
+        padding: 13px 25px;
+    }
+
+    .header-menu li {
+        clear: both;
+        line-height: 13px;
+    }
+
+    .dropdown-menu {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    #mobile-menu .dropdown .fa-angle-down.rotate {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    span.fa.fa-angle-down.visible-xs {
+        display: block !important;
+    }
+
+    #mobile-menu .dropdown .dropdown-menu {
+        position: static;
+        float: none;
+        clear: both;
+        -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+        -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+        -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+        transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    }
+
+    .header-menu .nav.navbar-nav > li {
+        position: relative;
+    }
+
+    #mobile-menu .dropdown-menu > li > a:focus, #mobile-menu .dropdown-menu > li > a:hover {
+        background-color: transparent;
+        color: #0e1c29;
+    }
+
+    .main-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu {
+        background: transparent;
+    }
+
+        .main-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu li a {
+            padding-left: 38px;
+        }
+
+    .main-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown > .dropdown-menu li a > li.dropdown > .dropdown-menu li a {
+        padding-left: 65px;
+    }
+
+    .search-box .btn.search-box-button {
+        right: 31.3%;
+    }
+
+    .dropdown-menu.sub-menusublist.first-level li a {
+        padding: 10px 60px 10px 40px !important;
+        background: url('../images/submenu-arrow.png') no-repeat 37px 14px !important;
+    }
+
+    .dropdown-menu.sub-menusublist.first-level .dropdown-menu.sub-menusublist.first-level li a {
+        padding: 10px 60px 10px 50px !important;
+        background: url('../images/submenu-arrow.png') no-repeat 37px 14px !important;
+    }
+
+    .dropdown-menu.sub-menusublist.first-level .dropdown-menu.sub-menusublist.first-level .dropdown-menu.sub-menusublist.first-level li a {
+        padding: 10px 60px 10px 60px !important;
+        background: url('../images/submenu-arrow.png') no-repeat 37px 14px !important;
+    }
+
+    .dropdown-menu.sub-menusublist.first-level .dropdown-menu.sub-menusublist.first-level .dropdown-menu.sub-menusublist.first-level .dropdown-menu.sub-menusublist.first-level li a {
+        padding: 10px 60px 10px 70px !important;
+        background: url('../images/submenu-arrow.png') no-repeat 37px 14px !important;
+    }
+    /*HEADER MENU FINISH*/
 
     .inputs {
         position: relative;
