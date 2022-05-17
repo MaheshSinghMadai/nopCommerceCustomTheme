@@ -4438,7 +4438,7 @@ tbody.collapse.in {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 160px;
+    min-width: 100px;
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 14px;
@@ -5732,7 +5732,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        color: #9d9d9d;
+        color: white;
     }
 
         .navbar-inverse .navbar-nav > li > a:focus,
