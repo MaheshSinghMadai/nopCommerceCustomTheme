@@ -7343,8 +7343,9 @@ pre {
     }
 
     .header-menu .navbar.navbar-inverse .nav.navbar-nav li a {
-        font-size: 12px;
+        font-size: 14px;
         padding: 20px 12px;
+        font-weight:bold;
     }
 
     /*Login Page*/
@@ -8931,7 +8932,7 @@ pre {
 
     .main-menu.goToTop .navbar.navbar-inverse.category-menu {
         margin: 0 auto;
-        width: 1140px !important;
+        width: 100% !important;
     }
 
     .header-menu .main-menu {
