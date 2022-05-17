@@ -3,7 +3,8 @@ NopCommerce(ASP.NET Core template) theme customiazation task
 
 # Home
 
-![HomePage](https://user-images.githubusercontent.com/12298173/168786555-49ed5e3a-5526-4440-a460-a14b0cbd6381.png)
+![Home](https://user-images.githubusercontent.com/12298173/168793200-f6b23567-6e47-4a3c-a778-1345030e10f3.png)
+
 
 # Register
 
@@ -11,7 +12,8 @@ NopCommerce(ASP.NET Core template) theme customiazation task
 
 # Login
 
-![Login](https://user-images.githubusercontent.com/12298173/168787592-d0042dcd-5699-4313-9574-a5c948cc165e.png)
+![Login](https://user-images.githubusercontent.com/12298173/168793225-f812b67e-0293-43f4-8116-f72216bd8652.png)
+
 
 
 # Shopping Cart
