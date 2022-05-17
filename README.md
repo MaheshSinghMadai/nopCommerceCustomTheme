@@ -11,7 +11,8 @@ NopCommerce(ASP.NET Core template) theme customiazation task
 
 # Login
 
-![Login](https://user-images.githubusercontent.com/12298173/168786653-9c65f9f8-f10e-4e80-9009-0bebe1275204.png)
+![Login](https://user-images.githubusercontent.com/12298173/168787592-d0042dcd-5699-4313-9574-a5c948cc165e.png)
+
 
 # Shopping Cart
 
