@@ -1975,7 +1975,7 @@ label, label + * {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         font-weight:bold;
-        border-bottom: 1px solid #eee;
+       /* border-bottom: 1px solid #eee;*/
         padding-bottom:25px;
     }
        /* .home-page-category-grid .title::after {
@@ -2036,7 +2036,7 @@ label, label + * {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         font-weight: bold;
-        border-bottom: 1px solid #eee;
+       /* border-bottom: 1px solid #eee;*/
         padding-bottom: 25px;
     }
 
