@@ -14,7 +14,7 @@
         <div id="mobile-menu" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuBefore })
-             
+
                 @if (!Model.UseAjaxMenu)
                 {
                     var rootCategories = Model.Categories.Where(x => x.IncludeInTopMenu).ToList();
@@ -27,34 +27,36 @@
                         @await Html.PartialAsync("_CategoryLine.TopMenu", categoryLineModel)
                     }
                 }
-                @*@foreach (var topic in Model.Topics)
-                {
-                    <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
-                }
-                @if (Model.NewProductsEnabled && Model.DisplayNewProductsMenuItem)
-                {
-                    <li><a href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a></li>
-                }
-                @if (Model.DisplayProductSearchMenuItem)
-                {
-                    <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a></li>
-                }
-                @if (Model.DisplayCustomerInfoMenuItem)
-                {
-                    <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
-                }
-                @if (Model.BlogEnabled && Model.DisplayBlogMenuItem)
-                {
-                    <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>
-                }
+
                 @if (Model.ForumEnabled && Model.DisplayForumsMenuItem)
                 {
-                    <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
+                    <li><a href="@Url.RouteUrl("Boards")">@*@T("Forum.Forums")*@Pet Talk</a></li>
                 }
-                @if (Model.DisplayContactUsMenuItem)
-                {
-                    <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
-                }*@
+                @*@foreach (var topic in Model.Topics)
+        {
+            <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+        }
+        @if (Model.NewProductsEnabled && Model.DisplayNewProductsMenuItem)
+        {
+            <li><a href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a></li>
+        }
+        @if (Model.DisplayProductSearchMenuItem)
+        {
+            <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a></li>
+        }
+        @if (Model.DisplayCustomerInfoMenuItem)
+        {
+            <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
+        }
+        @if (Model.BlogEnabled && Model.DisplayBlogMenuItem)
+        {
+            <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>
+        }
+
+        @if (Model.DisplayContactUsMenuItem)
+        {
+            <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+        }*@
                 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
             </ul>
         </div><!-- /.navbar-collapse -->

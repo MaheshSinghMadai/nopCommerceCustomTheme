@@ -1978,7 +1978,7 @@ label, label + * {
         border-bottom: 1px solid #eee;
         padding-bottom:25px;
     }
-        .home-page-category-grid .title::after {
+       /* .home-page-category-grid .title::after {
             background: url(../images/ribbon-bow.jpg) no-repeat;
             content: "";
             left: 47%;
@@ -1987,7 +1987,7 @@ label, label + * {
             height: 50px;
             width: 60px;
             margin-bottom:20px;
-        }
+        }*/
 
         .home-page-category-grid .title a,
         .sub-category-grid .title a {
@@ -2040,16 +2040,16 @@ label, label + * {
         padding-bottom: 25px;
     }
 
-        .product-grid .title::after {
+        /*.product-grid .title::after {
             background: url(../images/ribbon-bow.jpg) no-repeat;
             content: "";
             left: 40%;
-            position: absolute;
+            position: absolute;*/
            /* top: 100%;*/
-            height: 50px;
+            /*height: 50px;
             width: 60px;
             margin: 65px;
-        }
+        }*/
 
 .manufacturer-grid .title {
     margin: 0 0 15px;
@@ -9756,7 +9756,7 @@ pre {
 
 
     .forum-breadcrumb {
-        margin: -30px 0 30px;
+        margin: 30px 0 30px;
     }
 
     .current-time {
