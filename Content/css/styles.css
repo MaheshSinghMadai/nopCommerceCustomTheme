@@ -75,7 +75,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #444;
+    color: black;
 }
 
 a {
@@ -1089,7 +1089,7 @@ label, label + * {
     height: 36px;
     border: none;
     background-color: #444;
-    padding: 14px;
+    padding: 10px;
     text-align: center;
     font-size: 14px;
     color: white;
@@ -3626,7 +3626,7 @@ product-reviews-page .page-body .write-review .fieldset .form-fields {
 
     .topic-block-title h2 {
         font-size: 30px;
-        font-weight: normal;
+        font-weight: bold;
     }
 
 .topic-block-body {
@@ -3647,7 +3647,7 @@ product-reviews-page .page-body .write-review .fieldset .form-fields {
 
 .topic-block strong,
 .topic-page strong {
-    color: #444;
+    color: black;
 }
 
 .home-page .topic-block {
@@ -7888,13 +7888,13 @@ pre {
     }
 
         .search-box input.search-box-text {
-            height: 50px;
+            height: 40px;
             margin: 2%;
-            width: 62%
+            width: 63%
         }
 
         .search-box .search-box-button {
-            height: 50px;
+            height: 40px;
             margin: 2%;
             width: 15%
         }
@@ -9293,13 +9293,13 @@ pre {
     }
 
         .search-box input.search-box-text {
-            height: 50px;
-            margin: 2%;
-            width: 61%
+            height: 40px;
+            margin: -1%;
+            width: 63%
         }
 
         .search-box .search-box-button {
-            height: 50px;
+            height: 40px;
             margin: 0;
             width: 15%
         }
