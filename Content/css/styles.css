@@ -537,6 +537,9 @@ label, label + * {
 .forum-table .forum-details,
 .forum-table .topic-details {
     text-align: left;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #ddd;
 }
 
 .cart .product a,
@@ -6220,13 +6223,13 @@ label {
 
 .forum-search-box .advanced a {
     line-height: 22px;
-    color: #444;
-    text-decoration: underline;
+    color: black;
+    
 }
 
     .forum-search-box .advanced a:hover,
     .forum-search-box .advanced a:focus {
-        color: #4ab2f1;
+        color: #2d9c6d;
     }
 
 .forum-search-page .page-title {
@@ -6244,6 +6247,7 @@ label {
 
 .forums-table-section {
     margin: 0 0 60px;
+    box-shadow : 1px 1px 1px 1px #ddd;
 }
 
     .forums-table-section + .pager {
@@ -6251,15 +6255,18 @@ label {
     }
 
 .forums-table-section-title {
-    margin: 0 0 15px;
-    padding: 0 10px;
+    margin: 0;
+    padding: 15px;
+    background-color: whitesmoke;
+    color: black;
+    border-bottom: 1px solid #ddd;
 }
 
     .forums-table-section-title a,
     .forums-table-section-title strong {
         font-size: 22px;
-        font-weight: normal;
-        color: #444;
+        font-weight: bold;
+        color: black;
     }
 
         .forums-table-section-title a:hover,
@@ -6268,10 +6275,10 @@ label {
         }
 
 .forums-table-section .image div {
-    width: 38px;
-    height: 32px;
+    width: 50px;
+    height: 40px;
     margin: auto;
-    background: url('../images/topic-type1.png') center no-repeat;
+   background: url('../images/folder1.jpg') center no-repeat;
 }
 
     .forums-table-section .image div.sticky {
@@ -6289,9 +6296,9 @@ label {
 
     .forums-table-section .forum-title a,
     .forums-table-section .topic-title a {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
-        color: #444;
+        color: #2d9c6d;
     }
 
         .forums-table-section .forum-title a:hover,
@@ -6325,16 +6332,19 @@ label {
     }
 
 .forums-table-section .view-all {
-    margin: 30px 0 0;
+    margin:15px;
+    height:35px;
     padding: 0 10px;
+   
 }
 
     .forums-table-section .view-all a {
-        background-color: #4ab2f1;
+        background-color: #2d9c6d;
         padding: 10px 15px;
         font-size: 12px;
-        color: #fff;
+        color: white;
         text-transform: uppercase;
+        margin: 10px ;
     }
 
         .forums-table-section .view-all a:hover,
@@ -8052,15 +8062,24 @@ pre {
     .forum-group .forum-table td.topics,
     .forum-group .forum-table td.posts {
         display: table-cell;
+        background-color: white;
+        color: black;
+        text-align:left;
+        border-bottom: 1px solid #ddd;
     }
 
     .topic-group .forum-table th.latest-post,
     .topic-group .forum-table td.latest-post {
         display: table-cell;
+        background-color: white;
+        color: black;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
     }
 
     .forum-table td.image {
-        max-width: 40px;
+        max-width: 30px;
+        border-bottom: 1px solid #ddd;
     }
 
         .forum-table td.image div {
@@ -8759,6 +8778,10 @@ pre {
     .forum-table td.views,
     .forum-table td.votes {
         display: table-cell;
+        background-color: white;
+        color: black;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
     }
 
     .forum-table td.image {
@@ -9080,7 +9103,7 @@ pre {
             height: 65px;
             width: 140px;
             position: absolute;
-            left: 0px;
+            left: -125px;
             top: 0;
         }
 
@@ -9772,7 +9795,7 @@ pre {
     }
 
         .forum-search-box .advanced {
-            text-align: left;
+            text-align: right;
         }
 
             .forum-search-box .advanced a {
@@ -9780,7 +9803,7 @@ pre {
             }
 
     .forums-table-section td {
-        min-width: 150px;
+        min-width: 150px;      
     }
 
         .forums-table-section td:first-child {
