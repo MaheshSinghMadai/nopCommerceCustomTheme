@@ -7462,6 +7462,10 @@ pre {
         width: 100%;
     }
 
+    .col-md-12{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .header-links ul {
         margin: auto;
         text-align: center;
@@ -8014,7 +8018,7 @@ pre {
     /*** FORUM & PROFILE ***/
 
     .forums-header {
-        background-color: #f9f9f9;
+        background-color: white;
         padding: 30px 20px 20px;
     }
 
@@ -9076,7 +9080,7 @@ pre {
             height: 65px;
             width: 140px;
             position: absolute;
-            left: -125px;
+            left: 0px;
             top: 0;
         }
 
@@ -9087,7 +9091,7 @@ pre {
             height: 65px;
             width: 140px;
             position: absolute;
-            right: -125px;
+            right: 0px;
             top: 0;
         }
 
@@ -9104,7 +9108,7 @@ pre {
     }
 
 
-    /*.header-menu {
+    .header-menu {
         position: relative;
         z-index: 5;
         width: 100%;
@@ -9112,13 +9116,13 @@ pre {
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
         text-align: center;
-        position: sticky;*/
-        /*top: -1px;*/
-        /*color: white;
+        position: sticky;
+        top: -1px;
+        color: white;
         height: 50px;
         background-color: #2D9C6d;
         
-    }*/
+    }
 
     .flyout-cart {
         position: absolute;
