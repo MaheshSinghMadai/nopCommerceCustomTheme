@@ -89,7 +89,12 @@ a {
         opacity: 0.99; /*firefox scale bug fix*/
     }
 
-
+    .pettalksubcategory{
+        color :#333;
+        font-weight:bold;
+        text-transform:capitalize;
+        text-decoration: none;
+    }
 
  
 .header-links-wrapper {

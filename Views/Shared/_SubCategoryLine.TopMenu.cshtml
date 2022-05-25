@@ -10,9 +10,14 @@
     </a>
     @{
         <ul class="dropdown-menu sub-menusublist first-level side-menu" role="menu">
+
             @foreach (var subCategory in Model.SubCategories)
             {
                 @await Html.PartialAsync("_CategorySubCategoryLine.TopMenu", subCategory)
+            }
+            @if (Model.Name == "Pet Lover Community")
+            {
+                <li style="display:inline-grid"><a style="font-weight: bold;" href="@Url.RouteUrl("Boards")">@*@T("Forum.Forums")*@Pet Talk</a></li>
             }
         </ul>
     }
