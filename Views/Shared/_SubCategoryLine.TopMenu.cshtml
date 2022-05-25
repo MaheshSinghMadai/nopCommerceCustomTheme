@@ -10,10 +10,10 @@
     </a>
     @{
         <ul class="dropdown-menu sub-menusublist first-level side-menu" role="menu">
-                    @foreach (var subCategory in Model.SubCategories)
-                    {
-                        @await Html.PartialAsync("_CategorySubCategoryLine.TopMenu", subCategory)
-                    }            
+            @foreach (var subCategory in Model.SubCategories)
+            {
+                @await Html.PartialAsync("_CategorySubCategoryLine.TopMenu", subCategory)
+            }
         </ul>
     }
 </li>

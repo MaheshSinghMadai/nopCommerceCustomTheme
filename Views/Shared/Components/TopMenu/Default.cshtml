@@ -32,7 +32,8 @@
                 {
                     <li><a href="@Url.RouteUrl("Boards")">@*@T("Forum.Forums")*@Pet Talk</a></li>
                 }
-                @*@foreach (var topic in Model.Topics)
+
+        @foreach (var topic in Model.Topics)
         {
             <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
         }
@@ -56,7 +57,7 @@
         @if (Model.DisplayContactUsMenuItem)
         {
             <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
-        }*@
+        }
                 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
             </ul>
         </div><!-- /.navbar-collapse -->

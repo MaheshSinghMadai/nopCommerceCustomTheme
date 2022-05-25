@@ -18,9 +18,11 @@
         @await Component.InvokeAsync("TopMenu")
         
     </div>
-    <div class="slider">
+
+    @*<div class="slider">
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
-    </div>
+    </div>*@
+
     <div class="master-wrapper-content">
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContentBefore })
         

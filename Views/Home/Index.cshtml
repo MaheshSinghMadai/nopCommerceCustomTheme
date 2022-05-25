@@ -19,6 +19,9 @@
     //page class
     Html.AppendPageCssClassParts("html-home-page");
 }
+<div class="slider">
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
+</div>
 <div class="page home-page">
     <div class="page-body">
         @*@await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })*@
