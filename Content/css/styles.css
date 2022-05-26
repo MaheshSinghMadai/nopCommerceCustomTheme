@@ -7296,6 +7296,8 @@ pre {
 
         .main-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu li a {
             padding-left: 38px;
+            text-transform: capitalize;
+            font-weight: normal;
         }
 
     .main-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown > .dropdown-menu li a > li.dropdown > .dropdown-menu li a {
@@ -8371,7 +8373,6 @@ pre {
 
         /*** PRODUCT REVIEWS ***/
 
-
         .product-review-item .review-title {
             float: left;
             max-width: 600px;
@@ -8391,10 +8392,7 @@ pre {
         }
 
 
-
-
         /*** REGISTRATION, LOGIN, ACCOUNT ***/
-
 
         .address-list-page .section,
         .order-list-page .section,
@@ -9106,6 +9104,7 @@ pre {
                 -webkit-transition: all 300ms ease-in-out 0s;
                 -moz-transition: all 300ms ease-in-out 0s;
                 -o-transition: all 300ms ease-in-out 0s;
+                overflow: scroll;
             }
 
         .main-menu.goToTop .navbar.navbar-inverse.category-menu {
@@ -9113,13 +9112,13 @@ pre {
             width: 100% !important;
         }
 
-        .header-menu .main-menu {
+      /*  .header-menu .main-menu {
             background: url(../images/menubar-background.jpg);
             width: 100% !important;
             transition: all 0.5s ease-in-out 0s;
-        }
+        }*/
 
-            .header-menu .main-menu::before {
+          /*  .header-menu .main-menu::before {
                 content: "";
                 float: left;
                 background: url(../images/menubar-left.png) no-repeat left center;
@@ -9139,7 +9138,7 @@ pre {
                 position: absolute;
                 right: 0px;
                 top: 0;
-            }
+            }*/
 
         .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.active > a {
             background: url(../images/menubar-li-background.jpg);
@@ -9869,7 +9868,6 @@ pre {
 
 
         /*** GLOBAL STYLES ***/
-
         .master-wrapper-content {
             width: 80%;
         }
@@ -9886,14 +9884,20 @@ pre {
             width: auto;
         }
 
+        .navbar{    
+            margin-bottom: 0;
+        }
 
         /*** HEADER ***/
-
 
         .header {
             width: 100%;
             background-color: whitesmoke;
         }
+
+        .header-menu .navbar.navbar-inverse .navbar-collapse {
+                padding: 0 5% 0 10%;
+            }
 
         .header-menu .main-menu::before {
             content: "";
@@ -10073,7 +10077,6 @@ pre {
 
         /*** NAVIGATION ***/
 
-
         .header-menu {
             width: 100%;
             text-align: center;
@@ -10113,7 +10116,6 @@ pre {
 
         /*** PRODUCT REVIEWS ***/
 
-
         .product-review-item .review-title {
             max-width: 1050px;
         }
@@ -10125,7 +10127,6 @@ pre {
 
 
         /*** REGISTRATION, LOGIN, ACCOUNT ***/
-
 
         .login-page .returning-wrapper input[type="text"],
         .login-page .returning-wrapper input[type="email"],

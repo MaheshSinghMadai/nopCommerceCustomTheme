@@ -19,9 +19,26 @@
     //page class
     Html.AppendPageCssClassParts("html-home-page");
 }
+
+<!-- Back to top button -->
+<button type="button"
+        @*class="btn btn-primary btn-floating btn-lg"*@
+        id="btn-back-to-top"
+        style="
+            position: fixed;
+            bottom: 0px;
+            height: 45px;
+            right: 20px;
+            display: none;
+            border: none">
+    @*<i class="fas fas-arrow-up"></i>*@
+    <img src="~/images/upArrow.png" style="height:35px;width:55px;" />
+</button>
+
 <div class="slider">
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
 </div>
+
 <div class="page home-page">
     <div class="page-body">
         @*@await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })*@

@@ -17,7 +17,11 @@
             }
             @if (Model.Name == "Pet Lover Community")
             {
-                <li style="display:inline-grid"><a style="font-weight: bold;" href="@Url.RouteUrl("Boards")">@*@T("Forum.Forums")*@Pet Talk</a></li>
+                <li style="display:inline-grid">
+                    <a style="font-weight: bold;" href="@Url.RouteUrl("Boards")">
+                            @T("Forum.Forums")
+                        </a>
+                </li>
             }
         </ul>
     }

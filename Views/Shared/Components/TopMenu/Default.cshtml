@@ -28,10 +28,10 @@
                     }
                 }
 
-                @if (Model.ForumEnabled && Model.DisplayForumsMenuItem)
-                {
-                    <li><a href="@Url.RouteUrl("Boards")">@*@T("Forum.Forums")*@Pet Talk</a></li>
-                }
+        @if (Model.ForumEnabled && Model.DisplayForumsMenuItem)
+            {
+                    <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
+            }
 
         @foreach (var topic in Model.Topics)
         {
