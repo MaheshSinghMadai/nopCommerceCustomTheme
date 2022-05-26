@@ -14,10 +14,10 @@
         box-sizing: border-box;
     }
 
- 
+
 
 html {
-     margin: 0;
+    margin: 0;
     -webkit-text-size-adjust: none;
 }
 
@@ -7090,8 +7090,7 @@ pre {
 
     .header-menu .main-menu.goToTop .navbar.navbar-inverse .nav.navbar-nav, .header-menu .main-menu .navbar.navbar-inverse .nav.navbar-nav {
         overflow-y: scroll;
-        max-height: 400px;
-      
+        max-height: 400px; 
     }
 
     .header-menu .navbar.navbar-inverse .nav.navbar-nav li a {
@@ -7103,13 +7102,12 @@ pre {
       
     }
 
-    .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu li a {
+    /*.header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu li a {
         background: url(../images/submenu-arrow.png) no-repeat 20px 14px;
-    }
+    }*/
 
     .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu {
-        min-width: 100%;
-        width: 100%;
+        width: 80%;
     }
 
     .navbar-inverse .navbar-toggle {
