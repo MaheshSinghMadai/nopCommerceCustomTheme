@@ -1404,9 +1404,10 @@ label, label + * {
         }
 
     .block .listbox {
+        po
         display: none;
         border-bottom: 1px solid #ddd;
-        padding: 10px 5px;
+       /* padding: 10px 5px;*/
     }
 
     .block .list li {
@@ -1977,8 +1978,7 @@ label, label + * {
     margin: 0 0 20px 0;
 }
 
-    .home-page-category-grid .title,
-    .sub-category-grid .title {
+    .home-page-category-grid .title {
         text-align: center;
         font-size: 50px;
         letter-spacing: .4rem;
@@ -1991,24 +1991,30 @@ label, label + * {
        /* border-bottom: 1px solid #eee;*/
         padding-bottom:25px;
     }
-       /* .home-page-category-grid .title::after {
-            background: url(../images/ribbon-bow.jpg) no-repeat;
-            content: "";
-            left: 47%;
-            position: absolute;
-            top: 80%;
-            height: 50px;
-            width: 60px;
-            margin-bottom:20px;
-        }*/
 
-        .home-page-category-grid .title a,
-        .sub-category-grid .title a {
+    .sub-category-grid .title {
+        text-align: center;
+        font-size: 10px;    
+        font-weight: normal;
+        margin: 5px;
+        color: #303133;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        font-weight: bold;
+        text-transform:uppercase;
+        /* border-bottom: 1px solid #eee;*/
+        padding-bottom: 10px;
+    }
+    
+       .home-page-category-grid .title a {
             display: block;
-            padding: 0 0 15px;
+            padding: 0 0 10px;
         }
 
-       
+        .sub-category-grid .title a {
+            display: block;
+            
+        }
 
     .home-page-category-grid .picture,
     .sub-category-grid .picture {
@@ -2053,17 +2059,7 @@ label, label + * {
         padding-bottom: 25px;
     }
 
-        /*.product-grid .title::after {
-            background: url(../images/ribbon-bow.jpg) no-repeat;
-            content: "";
-            left: 40%;
-            position: absolute;*/
-           /* top: 100%;*/
-            /*height: 50px;
-            width: 60px;
-            margin: 65px;
-        }*/
-
+   
 .manufacturer-grid .title {
     margin: 0 0 15px;
     text-align: center;
@@ -7884,6 +7880,8 @@ pre {
         display: none;
     }
 
+
+
     .block-account-navigation {
         float: none;
         margin: auto !important;
@@ -8192,6 +8190,8 @@ pre {
             opacity: 1;
             visibility: visible;
         }
+
+
 
         /*** FOOTER ***/
 
@@ -9108,38 +9108,6 @@ pre {
             width: 100% !important;
         }
 
-      /*  .header-menu .main-menu {
-            background: url(../images/menubar-background.jpg);
-            width: 100% !important;
-            transition: all 0.5s ease-in-out 0s;
-        }*/
-
-          /*  .header-menu .main-menu::before {
-                content: "";
-                float: left;
-                background: url(../images/menubar-left.png) no-repeat left center;
-                height: 65px;
-                width: 140px;
-                position: absolute;
-                left: -125px;
-                top: 0;
-            }
-
-            .header-menu .main-menu::after {
-                content: "";
-                float: right;
-                background: url(../images/menubar-right.png) no-repeat right center;
-                height: 65px;
-                width: 140px;
-                position: absolute;
-                right: 0px;
-                top: 0;
-            }*/
-
-        .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.active > a {
-            background: url(../images/menubar-li-background.jpg);
-        }
-
         .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.active::before {
             opacity: 1;
         }
@@ -9147,7 +9115,6 @@ pre {
         .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.active::after {
             opacity: 1;
         }
-
 
         .header-menu {
             position: relative;
