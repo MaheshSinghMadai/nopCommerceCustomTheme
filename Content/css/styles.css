@@ -4004,7 +4004,7 @@ label {
 .page.login-page .page-body .customer-blocks .new-wrapper .title {
     color: black;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     border-bottom: 2px solid #4cb17c;
     border: none;
 }
@@ -4018,16 +4018,15 @@ label {
     height: auto;
     text-align: left;
     padding: 2%;
-    
     box-shadow: 10px 10px 5px #aaaaaa;
     display:inline-block;
-    margin:2% 5%;
-    width:49%;
+    margin:2% 2%;
+    width:55%;
 }
 
     .page.login-page .page-body .customer-blocks .returning-wrapper.fieldset .title {
         color: #303133;
-        text-align: left;
+        text-align: center;
     }
 
     .page.login-page .page-body .customer-blocks .returning-wrapper.fieldset .form-fields {
