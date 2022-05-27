@@ -7226,7 +7226,7 @@ pre {
 
     /* Sub Category Toggle*/
     .header-menu li.dropdown .dropdown-menu li.dropdown:hover > .dropdown-menu {
-        display: none;
+        display: block;
     }
 
     .header-menu li.dropdown.open .dropdown-menu {
@@ -7237,7 +7237,7 @@ pre {
         position: absolute;
         right: 0px;
         font-size: 30px;
-        color: #fff;
+        color: white;
         cursor: pointer;
         z-index: 9;
         -webkit-transition: all 0.2s;
@@ -7308,7 +7308,6 @@ pre {
 
     .dropdown-menu.sub-menusublist.first-level li a {
         padding: 10px 60px 10px 40px !important;
-        background: url('../images/submenu-arrow.png') no-repeat 37px 14px !important;
     }
 
     .dropdown-menu.sub-menusublist.first-level .dropdown-menu.sub-menusublist.first-level li a {
