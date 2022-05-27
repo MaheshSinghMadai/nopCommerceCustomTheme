@@ -9016,8 +9016,9 @@ pre {
             padding: 0 5% 0 10%;
         }
 
+
         .header-menu .navbar.navbar-inverse .nav.navbar-nav > li {
-            left: 5%;
+            left: 4%;
         }
 
             .header-menu .navbar.navbar-inverse .nav.navbar-nav > li::before {

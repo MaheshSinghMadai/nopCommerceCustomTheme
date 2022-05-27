@@ -1,7 +1,7 @@
 ﻿@model Nop.Web.Models.Catalog.CategorySimpleModel
 @if (Model.SubCategories.Count > 0)
 {
-    @*@await Html.PartialAsync("_SubCategoryLine.TopMenu", Model)*@
+
 <li style="display:inline-grid">
     <a href="@Url.RouteUrl("Category", new { SeName = Model.SeName })">
         <strong>
@@ -19,7 +19,6 @@
     }
 </li>
 
-        @*@await Html.PartialAsync("_SubCategoryLine.TopMenu", Model)*@
     }
     else
     {
