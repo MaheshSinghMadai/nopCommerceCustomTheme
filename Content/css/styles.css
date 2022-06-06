@@ -7076,7 +7076,7 @@ pre {
     .header-links, .footer {
         width: 100%;
     }
-   
+
     .navbar-header{
         background-color: #2d9c6d;
     }
@@ -7482,7 +7482,9 @@ pre {
         width: 100%;
     }
 
-    .col-md-12{
+
+
+    .col-md-12 {
         padding-left: 0;
         padding-right: 0;
     }
@@ -7497,6 +7499,10 @@ pre {
         font-size: 14px;
         padding: 20px 12px;
         font-weight:bold;
+    }
+
+    .slider {
+        margin: 0 -15% 0 -15%;
     }
 
     /*Login Page*/
@@ -7923,6 +7929,7 @@ pre {
             width: 100%;
         }
 
+
         /*** GLOBAL TABLES ***/
 
 
@@ -8117,10 +8124,16 @@ pre {
             width: 100%;
         }
 
+    .slider {
+        margin: 0 ;
+    }
+
+
         .home-page-polls li {
             min-width: 100px;
         }
 
+ 
         .inputs {
             position: relative;
             margin: 0 12% 5%;
@@ -9389,6 +9402,7 @@ pre {
             float: none;
             width: 100%;
             margin-bottom: 10%;
+            margin-top:15%
         }
 
             .block .title {
