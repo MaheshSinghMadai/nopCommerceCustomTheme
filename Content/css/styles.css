@@ -1237,8 +1237,7 @@ label, label + * {
         margin: 0 0 10px;
         background: none;
         color: #444;
-        cursor: auto;
-        font-family: monospace;
+        cursor: auto;   
     }
 
     .follow-us .social ul {
@@ -1280,6 +1279,32 @@ label, label + * {
     .follow-us .social .instagram a {
         background-position: -152px 0;
     }
+
+.footer-upper .payment-method ul li {
+    background: url(../images/fonepay.png) no-repeat left center;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-upper .payment-method ul .payment-method2 {
+    background: url(../images/cashondelivery.png) no-repeat left center;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-upper .payment-method ul .payment-method3 {
+    background: none;
+}
+
+.footer-upper .payment-method ul .payment-method4 {
+    background: none;
+}
 
 .newsletter {
     width: 100%;
@@ -1402,7 +1427,7 @@ label, label + * {
         }
 
     .block .listbox {
-        po
+        
         display: none;
         border-bottom: 1px solid #ddd;
        /* padding: 10px 5px;*/
@@ -7501,9 +7526,9 @@ pre {
         font-weight:bold;
     }
 
-    .slider {
+  /*  .slider {
         margin: 0 -15% 0 -15%;
-    }
+    }*/
 
     /*Login Page*/
     .login-page .customer-blocks {
@@ -8124,9 +8149,9 @@ pre {
             width: 100%;
         }
 
-    .slider {
+   /* .slider {
         margin: 0 ;
-    }
+    }*/
 
 
         .home-page-polls li {
