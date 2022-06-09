@@ -1426,11 +1426,8 @@ label, label + * {
             font-weight: normal;
         }
 
-    .block .listbox {
-        
-        display: none;
-        border-bottom: 1px solid #ddd;
-       /* padding: 10px 5px;*/
+    .block .listbox { 
+        display:block;
     }
 
     .block .list li {
@@ -1440,7 +1437,7 @@ label, label + * {
     .block .list a {
         display: inline-block;
         position: relative;
-        padding: 5px 0;
+        padding: 15px 0;
         font-size: 16px;
         color: #444;
         -webkit-transition: all 0.1s ease;
@@ -1450,7 +1447,7 @@ label, label + * {
         .block .list a:before {
             content: "";
             position: absolute;
-            top: 12px;
+            top: 22px;
             left: -15px;
             width: 5px;
             height: 5px;
@@ -1479,7 +1476,7 @@ label, label + * {
     }
 
         .block .sublist a {
-            font-size: 12px;
+            font-size: 14px;
             margin-left: 20px;
         }
 
@@ -2264,7 +2261,7 @@ label, label + * {
     float: left;
     height: 50px;
     position: absolute;
-    right: -70px;
+    right: -53px;
     text-indent: -9999px;
     width: 70px;
     margin-top: 40px;
@@ -2275,7 +2272,7 @@ label, label + * {
     float: left;
     height: 50px;
     position: absolute;
-    left: -70px;
+    left: -53px;
     text-indent: -9999px;
     width: 70px;
     margin-top:50px;
@@ -7507,7 +7504,9 @@ pre {
         width: 100%;
     }
 
-
+    .slider-wrapper.theme-custom {
+        max-width: 100%;
+    }
 
     .col-md-12 {
         padding-left: 0;
@@ -8878,9 +8877,36 @@ pre {
             background: none;
         }
 
+    .listbox ul li a {
+        color: black;
+        float: left;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        width: 90%;
+        font-size:14px;
+        font-weight:normal;
+    }
+
+    .listbox a:before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 5px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #303133;
+    }
+
+    .listbox ul li a:hover {
+        color: #2d9c6d;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
         /*** GLOBAL STYLES ***/
         .master-wrapper-content {
-            width: 80%;
+            width: 90%;
         }
 
         .slider{
@@ -8977,6 +9003,7 @@ pre {
             width: 100%;
             margin: auto;
             background-color: whitesmoke;
+
         }
 
         .header-upper:after {
@@ -9444,7 +9471,8 @@ pre {
 
             .block .listbox {
                 display: block;
-                border-bottom: none;
+                padding-left:10px;
+                background-color: white;
             }
 
             .block a.product-picture {
