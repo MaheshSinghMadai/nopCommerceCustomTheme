@@ -1050,8 +1050,6 @@ label, label + * {
 }
 
 .header-logo {
-    margin: 0 0 20px;
-
     text-align: center;
 }
 
@@ -1063,7 +1061,7 @@ label, label + * {
 
         .header-logo a img {
             max-width: 100%;
-           
+            margin-left: 30%;
             opacity: 1;
         }
 
@@ -8142,22 +8140,15 @@ pre {
 
 @media all and (min-width: 769px) {
 
-
         /**** GLOBAL ***/
         .master-wrapper-content {
             width: 100%;
         }
 
-   /* .slider {
-        margin: 0 ;
-    }*/
-
-
         .home-page-polls li {
             min-width: 100px;
         }
 
- 
         .inputs {
             position: relative;
             margin: 0 12% 5%;
@@ -8241,7 +8232,7 @@ pre {
             .footer-block .title {
                 margin: 0 0 15px;
                 background: none;
-                padding: 0;
+                padding: 5px 0;
                 color: black;
                 cursor: auto;
             }
@@ -8892,8 +8883,8 @@ pre {
         position: absolute;
         top: 20px;
         left: 5px;
-        width: 6px;
-        height: 6px;
+        width: 5px;
+        height: 5px;
         border-radius: 3px;
         background-color: #303133;
     }
@@ -8910,7 +8901,7 @@ pre {
         }
 
         .slider{
-            margin:0 -15% 0 -15%;
+            margin:0 -7% 0 -7%;
         }
 
         .center-2 {
@@ -9076,7 +9067,7 @@ pre {
         }
 
         .header-menu .navbar.navbar-inverse .navbar-collapse {
-            padding: 0 5% 0 10%;
+            padding: 0 5% 0 5%;
         }
 
 
@@ -9365,13 +9356,15 @@ pre {
                 clear: both;
             }
 
+          
         .footer-block {
-            float: left;
-            width: 18%;
+            /*float: left;*/
+            width: 15%;
             margin-left: 30px;
         }
 
             .footer-block .title {
+                font-size:24px;
                 font-weight: bolder;
             }
 
@@ -9414,7 +9407,7 @@ pre {
         .footer-lower {
             position: relative;
             width: 100%;
-            padding: 10px 80px;
+            padding: 10px 45px;
             background-color: #303133;
             color: white;
         }
@@ -9899,6 +9892,14 @@ pre {
         /*** GLOBAL STYLES ***/
         .master-wrapper-content {
             width: 80%;
+        }
+
+        .slider-wrapper.theme-custom {
+            max-width: 100%;
+        }
+
+        .slider{
+            margin:0 -14% 0 -14%;
         }
 
         .inputs label {
