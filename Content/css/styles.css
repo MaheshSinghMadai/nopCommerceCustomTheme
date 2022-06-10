@@ -8871,7 +8871,7 @@ pre {
     .listbox ul li a {
         color: black;
         float: left;
-        padding: 15px;
+        padding: 12px;
         border-bottom: 1px solid #ddd;
         width: 90%;
         font-size:14px;
@@ -9899,7 +9899,7 @@ pre {
         }
 
         .slider{
-            margin:0 -14% 0 -14%;
+            margin:0 -14.5% 0 -14.5%;
         }
 
         .inputs label {
