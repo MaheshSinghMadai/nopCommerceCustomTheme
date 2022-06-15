@@ -1516,7 +1516,7 @@ label, label + * {
             position: relative;
             margin: 0 10px;
             overflow: hidden;
-            font-size: 17px !important; /*setting base size*/
+            font-size: 14px !important; /*setting base size*/
         }
 
             .block .tags li a,
@@ -1531,7 +1531,7 @@ label, label + * {
                 .block .tags li a:focus,
                 .product-tags-all-page li a:hover,
                 .product-tags-all-page li a:focus {
-                    color: #4ab2f1;
+                    color: #2d9c6d;
                 }
 
 .poll strong {
