@@ -22,21 +22,23 @@
 
 <!-- Back to top button -->
 <button type="button"
-        id="btn-back-to-top"
-        style="        position: fixed;
+            id="btn-back-to-top"
+            style="        position: fixed;
         bottom: 0px;
         height: 45px;
         right: 20px;
         display: none;
         border: none;
-        transition: 2s all ease;
+        transition: 0.5s ease-in 0.3s;
     ">
-    <img src="~/images/upArrow.png" style="height:35px;width:55px;" />
-</button>
+        <img src="../Themes/NewTheme/Content/images/upArrow.png" style="height:35px;width:55px;" />
+    </button>
+ Back to top button 
 
-    <div class="slider">
-        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
-    </div>
+
+<div class="slider">
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
+</div>
 
 <div class="page home-page">
     <div class="page-body">

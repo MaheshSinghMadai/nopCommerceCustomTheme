@@ -1,6 +1,7 @@
 ﻿@{
     Layout = "_Root.Head";
 }
+
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BodyStartHtmlTagAfter })
 @await Html.PartialAsync("_Notifications")
 @await Html.PartialAsync("_JavaScriptDisabledWarning")
@@ -16,16 +17,16 @@
     </script>
     <div class="header-menu">
         @await Component.InvokeAsync("TopMenu")
-        
+
     </div>
 
     @*<div class="slider">
-        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
-    </div>*@
+            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
+        </div>*@
 
     <div class="master-wrapper-content">
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContentBefore })
-        
+
 
         @if (IsSectionDefined("Breadcrumb"))
         {

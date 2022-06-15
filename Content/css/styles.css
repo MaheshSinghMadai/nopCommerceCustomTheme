@@ -132,6 +132,11 @@ a {
             color: #4ab2f1;
         }
 
+/*.backtotopbtn {
+    height: 35px;
+    width: 55px;
+    background-image:url(../images/upArrow.png)
+}*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -1064,7 +1069,7 @@ label, label + * {
 
         .header-logo a img {
             max-width: 100%;
-            margin-left: 30%;
+            /*margin-left: 30%;*/
             opacity: 1;
         }
 
@@ -1208,8 +1213,6 @@ label, label + * {
             font-weight: normal;
         }
 
-
-
     .footer-block .list {
         display: none;
         margin: 0 0 20px;
@@ -1281,7 +1284,7 @@ label, label + * {
         background-position: -152px 0;
     }
 
-.footer-upper .payment-method ul li {
+/*.footer-upper .payment-method ul li {
     background: url(../images/fonepay.png) no-repeat left center;
     float: left;
     width: 100px;
@@ -1305,7 +1308,7 @@ label, label + * {
 
 .footer-upper .payment-method ul .payment-method4 {
     background: none;
-}
+}*/
 
 .newsletter {
     width: 100%;
@@ -1444,7 +1447,7 @@ label, label + * {
         -webkit-transition: all 0.1s ease;
         transition: all 0.1s ease;
     }
-
+/*
         .block .list a:before {
             content: "";
             position: absolute;
@@ -1453,7 +1456,7 @@ label, label + * {
             width: 5px;
             height: 5px;
             background-color: #ddd;
-        }
+        }*/
 
     .block .list .active > a {
         color: #6f0e0e;
@@ -7528,6 +7531,31 @@ pre {
         font-weight: bold;
     }
 
+    .footer-upper .payment-method ul li {
+        background: url(../images/fonepay.png) no-repeat left center;
+        float: left;
+        width: 100px;
+        height: 50px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .footer-upper .payment-method ul .payment-method2 {
+        background: url(../images/cashondelivery.png) no-repeat left center;
+        float: left;
+        width: 100px;
+        height: 50px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .footer-upper .payment-method ul .payment-method3 {
+        background: none;
+    }
+
+    .footer-upper .payment-method ul .payment-method4 {
+        background: none;
+    }
 
     /*Login Page*/
     .login-page .customer-blocks {
@@ -8898,6 +8926,7 @@ pre {
     }
 
         /*** GLOBAL STYLES ***/
+
         .master-wrapper-content {
             width: 90%;
         }
@@ -8966,6 +8995,21 @@ pre {
             margin: 6px 0 0;
         }
 
+        .header-logo {
+            text-align: center;
+        }
+
+        .header-logo a {
+            display: inline-block;
+            max-width: 100%;
+            line-height: 0; /*firefox line-height bug fix*/
+        }
+
+        .header-logo a img {
+                max-width: 100%;
+                margin-left: 30%;
+                opacity: 1;
+            }
 
         /*** GLOBAL TABLES ***/
 
@@ -8990,13 +9034,11 @@ pre {
 
         /*** HEADER ***/
 
-
         .header {
             font-family: 'Montserrat',sans-serif;
             width: 100%;
             margin: auto;
             background-color: whitesmoke;
-
         }
 
         .header-upper:after {
@@ -9450,7 +9492,7 @@ pre {
         /*** COLUMN ***/
     .block {
         float: none;
-        width: 100%;
+        width: 85%;
         margin-bottom: 10%;
         margin-top: 15%;
         background-color: white;
@@ -9462,7 +9504,7 @@ pre {
 
         .block.block-recently-viewed-products.well.box-shadow-wrapper .product-picture a {
             float: left;
-            padding: 15px 0px;
+            padding: 0;
             margin-right: 10px;
             border: none;
         }
@@ -9471,7 +9513,7 @@ pre {
         float: left;
         border: none;
         background: none;
-        padding: 35px 0px;
+        padding: 13px 15px;
         width: 60%;
     }
 
@@ -9933,6 +9975,32 @@ pre {
             margin: 10px 0;
             vertical-align: middle;
         }
+
+    .footer-upper .payment-method ul li {
+        background: url(../images/fonepay.png) no-repeat left center;
+        float: left;
+        width: 100px;
+        height: 50px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .footer-upper .payment-method ul .payment-method2 {
+        background: url(../images/cashondelivery.png) no-repeat left center;
+        float: left;
+        width: 100px;
+        height: 50px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .footer-upper .payment-method ul .payment-method3 {
+        background: none;
+    }
+
+    .footer-upper .payment-method ul .payment-method4 {
+        background: none;
+    }
     }
 
 @media all and (min-width: 1367px) {
@@ -10014,6 +10082,7 @@ pre {
                 background-color: #2d9c6d !important;
                 background: none !important;
             }
+
 
         /* PRODUCT SLIDER STYLE */
 
@@ -10285,4 +10354,4 @@ pre {
             width: 930px;
             max-width: 100%;
         }
-    }
+}
