@@ -2282,7 +2282,7 @@ label, label + * {
     left: -53px;
     text-indent: -9999px;
     width: 70px;
-    margin-top:50px;
+    margin-top:40px;
 }
 
 .owl-carousel .owl-next:hover {
@@ -7122,6 +7122,7 @@ pre {
 
     ul.dropdown-menu.sub-menusublist.first-level li {
       
+
     }
 
     .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu {
@@ -7523,6 +7524,10 @@ pre {
 
     .navbar {
         margin-bottom: 0px;
+    }
+
+    .payment-method .paymentimages ul li{
+        left:37%;
     }
 
     .header-menu .navbar.navbar-inverse .nav.navbar-nav li a {
