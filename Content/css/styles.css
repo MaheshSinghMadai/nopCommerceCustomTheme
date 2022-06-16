@@ -1516,7 +1516,7 @@ label, label + * {
             position: relative;
             margin: 0 10px;
             overflow: hidden;
-            font-size: 14px !important; /*setting base size*/
+            font-size: 16px !important; /*setting base size*/
         }
 
             .block .tags li a,
