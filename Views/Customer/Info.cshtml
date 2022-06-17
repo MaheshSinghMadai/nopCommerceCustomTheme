@@ -11,12 +11,14 @@
     Html.AppendPageCssClassParts("html-customer-info-page");
 }
 
-@section left
-    {
-    @await Component.InvokeAsync("CustomerNavigation", new { selectedTabId = CustomerNavigationEnum.Info })
-}
+<div class="customer-info-block">
+    @section left{
+        @await Component.InvokeAsync("CustomerNavigation", new { selectedTabId = CustomerNavigationEnum.Info })
+    }
+</div>
 
 <div class="page account-page customer-info-page">
+    
     <div class="page-title">
         <h1>@T("Account.MyAccount") - @T("Account.CustomerInfo")</h1>
     </div>
@@ -47,7 +49,7 @@
                     @if (Model.FirstNameEnabled)
                     {
                         <div class="inputs">
-                            <label asp-for="FirstName" ></label>
+                            <label asp-for="FirstName"></label>
                             <input asp-for="FirstName" />
                             @if (Model.FirstNameRequired)
                             {
@@ -59,7 +61,7 @@
                     @if (Model.LastNameEnabled)
                     {
                         <div class="inputs">
-                            <label asp-for="LastName" ></label>
+                            <label asp-for="LastName"></label>
                             <input asp-for="LastName" />
                             @if (Model.LastNameRequired)
                             {
@@ -90,7 +92,7 @@
                         </div>
                     }
                     <div class="inputs">
-                        <label asp-for="Email" ></label>
+                        <label asp-for="Email"></label>
                         <input asp-for="Email" />
                         <nop-required />
                         <span asp-validation-for="Email"></span>
@@ -110,7 +112,7 @@
                         if (Model.AllowUsersToChangeUsernames)
                         {
                             <div class="inputs">
-                                <label asp-for="Username" ></label>
+                                <label asp-for="Username"></label>
                                 <input asp-for="Username" />
                                 <nop-required />
                                 <span asp-validation-for="Username"></span>
@@ -123,7 +125,7 @@
                         else
                         {
                             <div class="inputs">
-                                <label asp-for="Username" ></label>
+                                <label asp-for="Username"></label>
                                 <span class="readonly-username">@Model.Username</span>
                             </div>
                         }
@@ -140,7 +142,7 @@
                         @if (Model.CompanyEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="Company" ></label>
+                                <label asp-for="Company"></label>
                                 <input asp-for="Company" />
                                 @if (Model.CompanyRequired)
                                 {
@@ -152,7 +154,7 @@
                         @if (Model.DisplayVatNumber)
                         {
                             <div class="inputs">
-                                <label asp-for="VatNumber" ></label>
+                                <label asp-for="VatNumber"></label>
                                 <input asp-for="VatNumber" />
                                 <span class="vat-status">@Model.VatNumberStatusNote</span>
                                 <span class="vat-note">
@@ -164,11 +166,11 @@
                 </div>
             }
             @if (Model.StreetAddressEnabled ||
-        Model.StreetAddress2Enabled ||
-        Model.ZipPostalCodeEnabled ||
-        Model.CityEnabled ||
-        Model.CountyEnabled ||
-        Model.CountryEnabled)
+       Model.StreetAddress2Enabled ||
+       Model.ZipPostalCodeEnabled ||
+       Model.CityEnabled ||
+       Model.CountyEnabled ||
+       Model.CountryEnabled)
             {
                 <div class="fieldset">
                     <div class="title">
@@ -178,7 +180,7 @@
                         @if (Model.StreetAddressEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="StreetAddress" ></label>
+                                <label asp-for="StreetAddress"></label>
                                 <input asp-for="StreetAddress" />
                                 @if (Model.StreetAddressRequired)
                                 {
@@ -190,7 +192,7 @@
                         @if (Model.StreetAddress2Enabled)
                         {
                             <div class="inputs">
-                                <label asp-for="StreetAddress2" ></label>
+                                <label asp-for="StreetAddress2"></label>
                                 <input asp-for="StreetAddress2" />
                                 @if (Model.StreetAddress2Required)
                                 {
@@ -202,7 +204,7 @@
                         @if (Model.ZipPostalCodeEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="ZipPostalCode" ></label>
+                                <label asp-for="ZipPostalCode"></label>
                                 <input asp-for="ZipPostalCode" />
                                 @if (Model.ZipPostalCodeRequired)
                                 {
@@ -214,7 +216,7 @@
                         @if (Model.CityEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="City" ></label>
+                                <label asp-for="City"></label>
                                 <input asp-for="City" />
                                 @if (Model.CityRequired)
                                 {
@@ -238,7 +240,7 @@
                         @if (Model.CountryEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="CountryId" ></label>
+                                <label asp-for="CountryId"></label>
                                 <select asp-for="CountryId" asp-items="Model.AvailableCountries"
                                         data-trigger="country-select"
                                         data-url="@(Url.RouteUrl("GetStatesByCountryId"))"
@@ -254,7 +256,7 @@
                         @if (Model.CountryEnabled && Model.StateProvinceEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="StateProvinceId" ></label>
+                                <label asp-for="StateProvinceId"></label>
                                 <select asp-for="StateProvinceId" asp-items="Model.AvailableStates"></select>
                                 @if (Model.StateProvinceRequired)
                                 {
@@ -277,7 +279,7 @@
                         @if (Model.PhoneEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="Phone" ></label>
+                                <label asp-for="Phone"></label>
                                 <input asp-for="Phone" />
                                 @if (Model.PhoneRequired)
                                 {
@@ -289,7 +291,7 @@
                         @if (Model.FaxEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="Fax" ></label>
+                                <label asp-for="Fax"></label>
                                 <input asp-for="Fax" />
                                 @if (Model.FaxRequired)
                                 {
@@ -311,7 +313,7 @@
                         @if (Model.NewsletterEnabled)
                         {
                             <div class="inputs">
-                                <label asp-for="Newsletter" ></label>
+                                <label asp-for="Newsletter"></label>
                                 <input asp-for="Newsletter" />
                                 <span asp-validation-for="Newsletter"></span>
                             </div>
@@ -333,7 +335,7 @@
                         @if (Model.AllowCustomersToSetTimeZone)
                         {
                             <div class="inputs">
-                                <label asp-for="TimeZoneId" ></label>
+                                <label asp-for="TimeZoneId"></label>
                                 <select asp-for="TimeZoneId" asp-items="Model.AvailableTimeZones"></select>
                                 <span asp-validation-for="TimeZoneId"></span>
                             </div>
@@ -352,7 +354,7 @@
             {
                 <div class="fieldset">
                     <div class="title">
-                       @T("Account.AssociatedExternalAuth")
+                        @T("Account.AssociatedExternalAuth")
                     </div>
                     @if (Model.AssociatedExternalAuthRecords.Count > 0)
                     {

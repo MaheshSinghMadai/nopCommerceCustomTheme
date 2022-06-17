@@ -7,6 +7,21 @@
 @await Html.PartialAsync("_JavaScriptDisabledWarning")
 @await Html.PartialAsync("_OldInternetExplorerWarning")
 <div class="master-wrapper-page">
+
+    <!-- Back to top button -->
+    <button type="button"
+            id="btn-back-to-top"
+            style="
+                position: fixed;
+                bottom: 0px;
+                height: 45px;
+                right: 20px;
+                display: none;
+                border: none;
+                transition: 0.5s ease-in 0.3s;
+    ">
+        <img src="../Themes/NewTheme/Content/images/upArrow.png" style="height:35px;width:55px;" />
+    </button>
     @await Component.InvokeAsync("AdminHeaderLinks")
     @await Html.PartialAsync("_Header")
     <script asp-location="Footer">
@@ -15,6 +30,7 @@
         };
         AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart', localized_data);
     </script>
+
     <div class="header-menu">
         @await Component.InvokeAsync("TopMenu")
 
@@ -32,7 +48,7 @@
         {
             @RenderSection("Breadcrumb")
         }
-        <div class="master-column-wrapper">
+        <div class="master-column-wrapper ">
             @RenderBody()
         </div>
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContentAfter })

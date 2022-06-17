@@ -1049,7 +1049,7 @@ label, label + * {
 .header-lower {
     height: auto;
     /*  background-image: url('../images/background2.jpg');*/
-    background-color: white;
+    background-color: whitesmoke;
     position: relative;
     z-index: 0;
     padding-right: 5px;
@@ -8932,7 +8932,7 @@ pre {
 
         /*** GLOBAL STYLES ***/
 
-        .master-wrapper-content {
+        .master-wrapper-content  {
             width: 90%;
         }
 
